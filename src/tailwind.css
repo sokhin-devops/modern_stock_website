@@ -1,6 +1,6 @@
 /* Tailwind v4 in plain CSS (it doesn't run through Sass), listed before styles.scss in angular.json.
    Layer order: Tailwind theme and base, then our components, then Tailwind utilities, so a utility class always wins.
-   The website has no PrimeNG: its few form controls use the prototype's own .input and .btn styles. */
+   The website uses no UI library: its few form controls use the prototype's own .input and .btn styles. */
 @layer theme, base, components, utilities;
 
 @import "tailwindcss";

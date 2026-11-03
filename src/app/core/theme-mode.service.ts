@@ -5,7 +5,7 @@ const KEY = 'ms-theme';
 
 /**
  * Light or dark, remembered per browser. index.html applies the saved choice before Angular starts,
- * so a dark page never flashes white. PrimeNG and Tailwind both follow the .app-dark class.
+ * so a dark page never flashes white. The prototype styles and Tailwind both follow the .app-dark class.
  */
 @Injectable({ providedIn: 'root' })
 export class ThemeModeService {
