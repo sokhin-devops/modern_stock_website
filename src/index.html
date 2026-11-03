@@ -15,8 +15,55 @@
     // Apply the saved light or dark choice before the page paints (see ThemeModeService).
     try { if (localStorage.getItem('ms-theme') === 'dark') document.documentElement.classList.add('app-dark'); } catch (e) {}
   </script>
+  <style>
+    /* Splash screen (see SplashService). Plain HTML and CSS, so it shows the moment the page arrives,
+       before any JavaScript. Angular fades it out once the app is ready and the fonts are loaded.
+       Safety net: if JavaScript never runs, the CSS animation below hides it after 4 seconds anyway. */
+    #ms-splash {
+      position: fixed; inset: 0; z-index: 9999;
+      display: grid; place-items: center;
+      background: radial-gradient(800px 480px at 50% 35%, #eaf1fd, transparent 70%), #ffffff;
+      color: #1f1f1f;
+      font-family: "Roboto", "Kantumruy Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+      transition: opacity .45s cubic-bezier(.2, 0, 0, 1), visibility .45s;
+      animation: ms-splash-auto-hide .45s 4s forwards;
+    }
+    .app-dark #ms-splash { background: radial-gradient(800px 480px at 50% 35%, #1c2b45, transparent 70%), #111214; color: #e8eaed; }
+    #ms-splash.ms-splash-out { opacity: 0; visibility: hidden; }
+    .ms-splash-box { display: flex; flex-direction: column; align-items: center; gap: 18px; animation: ms-splash-rise .6s cubic-bezier(.05, .7, .1, 1) both; }
+    .ms-splash-logo { width: 72px; height: 72px; border-radius: 22px; background: #1a73e8; display: grid; place-items: center;
+      box-shadow: 0 12px 32px rgba(26, 115, 232, .35); animation: ms-splash-pulse 1.6s ease-in-out .6s infinite; }
+    .app-dark .ms-splash-logo { background: #8ab4f8; box-shadow: 0 12px 32px rgba(138, 180, 248, .25); }
+    .ms-splash-logo svg { width: 40px; height: 40px; }
+    .app-dark .ms-splash-logo svg path { fill: #062e6f; }
+    .ms-splash-name { font-size: 22px; font-weight: 500; letter-spacing: -.01em; }
+    .ms-splash-bar { position: relative; width: 120px; height: 3px; overflow: hidden; border-radius: 999px; background: #d3e3fd; }
+    .app-dark .ms-splash-bar { background: #0842a0; }
+    .ms-splash-bar span { position: absolute; top: 0; left: 0; width: 40%; height: 100%; border-radius: inherit; background: #1a73e8;
+      animation: ms-splash-slide 1.1s cubic-bezier(.4, 0, .2, 1) infinite; }
+    .app-dark .ms-splash-bar span { background: #8ab4f8; }
+    @keyframes ms-splash-rise { from { opacity: 0; transform: translateY(8px) scale(.96); } }
+    @keyframes ms-splash-pulse { 50% { transform: scale(1.05); } }
+    @keyframes ms-splash-slide { from { transform: translateX(-100%); } to { transform: translateX(260%); } }
+    @keyframes ms-splash-auto-hide { to { opacity: 0; visibility: hidden; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ms-splash-box, .ms-splash-logo, .ms-splash-bar span { animation: none; }
+      .ms-splash-bar span { width: 100%; }
+    }
+  </style>
+  <noscript><style>#ms-splash { display: none; }</style></noscript>
 </head>
 <body class="site">
+  <div id="ms-splash" role="status" aria-live="polite" aria-label="Loading ModernStock">
+    <div class="ms-splash-box">
+      <div class="ms-splash-logo">
+        <!-- Material Symbols "inventory_2", the same mark as the logo in the header -->
+        <svg viewBox="0 -960 960 960" aria-hidden="true"><path fill="#fff" d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Z"/></svg>
+      </div>
+      <div class="ms-splash-name">ModernStock</div>
+      <div class="ms-splash-bar"><span></span></div>
+    </div>
+  </div>
   <app-root></app-root>
 </body>
 </html>

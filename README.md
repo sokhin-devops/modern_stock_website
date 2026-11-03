@@ -66,4 +66,9 @@ src/
 - **Text:** all of it lives in `src/i18n/*.json`. Khmer text that isn't from the prototype (About, Contact, legal pages, the longer Features page) needs a review by a native speaker.
 - **Placeholders:** the team names on About us, and the legal texts, are drafts the team must replace before launch.
 - **Dark mode:** the choice is saved per browser (`ms-theme`), and a small script in `index.html` applies it before the page appears.
+- **Splash screen:** it is plain HTML and CSS in [src/index.html](src/index.html), so it shows before any JavaScript runs.
+  - [SplashService](src/app/core/splash.service.ts) fades it out once Angular has rendered and the fonts have loaded, which means no unstyled text and no empty icon boxes.
+  - It stays up at least 0.45 s, and waits at most 1.5 s for fonts.
+  - If JavaScript never runs, CSS hides it after 4 s.
+  - It follows dark mode and "reduce motion".
 - **No PrimeNG:** the website doesn't use it. PrimeNG 22 is now under the commercial PrimeUI License, which needs a license key; the website's few form controls use the prototype's own `.input` and `.btn` styles instead.
