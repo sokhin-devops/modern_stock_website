@@ -228,8 +228,8 @@ button { font: inherit; color: inherit; }
 .site-menu-btn { display: none; }
 /* Phone menu: the pages, then language and dark mode, then the two buttons (inside a PrimeNG drawer). */
 .site-mobile { display: flex; flex-direction: column; }
-.site-mobile a, .site-mobile button.row-link { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 4px; border: 0; border-bottom: 1px solid var(--border); background: none; color: var(--text); font: inherit; font-size: 16px; font-weight: 500; text-align: left; text-decoration: none; cursor: pointer; }
-.site-mobile a.active { color: var(--primary); }
+.site-mobile > a, .site-mobile > button.row-link { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 4px; border: 0; border-bottom: 1px solid var(--border); background: none; color: var(--text); font: inherit; font-size: 16px; font-weight: 500; text-align: left; text-decoration: none; cursor: pointer; }
+.site-mobile > a.active { color: var(--primary); }
 .site-mobile .site-mobile-actions { display: flex; flex-direction: column; gap: 10px; padding-top: 20px; }
 .site-mobile .site-mobile-actions .p-button { width: 100%; }
 

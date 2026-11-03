@@ -26,26 +26,28 @@
   </nav>
 </header>
 
-<!-- Phones and tablets: the pages slide in from the side -->
-<p-drawer [(visible)]="menuOpen" position="right" [blockScroll]="true" [ariaCloseLabel]="'nav.close' | translate"
-          styleClass="site-drawer">
-  <ng-template #header>
-    <span class="site-logo"><span class="logo"><i class="icon pi pi-box"></i></span><b>ModernStock</b></span>
-  </ng-template>
-  <nav class="site-mobile" id="site-mobile" [attr.aria-label]="'nav.menu' | translate">
-    @for (item of pages; track item.page) {
-      <a [routerLink]="site.link(item.page)" routerLinkActive="active" (click)="menuOpen.set(false)">{{ item.key | translate }}</a>
-    }
-    <a [routerLink]="site.otherLangUrl()" (click)="menuOpen.set(false)">
-      <ms-flag [lang]="site.lang()" />{{ 'nav.switchLanguage' | translate }}
-    </a>
-    <button class="row-link" type="button" (click)="theme.toggle()">
-      <i class="icon pi" [class.pi-sun]="theme.dark()" [class.pi-moon]="!theme.dark()"></i>
-      {{ (theme.dark() ? 'nav.lightMode' : 'nav.darkMode') | translate }}
-    </button>
-    <div class="site-mobile-actions">
-      <a pButton [href]="site.appUrl('sign-up')"><span pButtonLabel>{{ 'nav.startFree' | translate }}</span></a>
-      <a pButton [outlined]="true" [href]="site.appUrl('login')"><span pButtonLabel>{{ 'nav.login' | translate }}</span></a>
-    </div>
-  </nav>
-</p-drawer>
+<!-- Phones and tablets: the pages slide in from the side. The drawer's code loads the first time the menu opens. -->
+@defer (when menuOpen()) {
+  <p-drawer [(visible)]="menuOpen" position="right" [blockScroll]="true" [ariaCloseLabel]="'nav.close' | translate"
+            styleClass="site-drawer">
+    <ng-template #header>
+      <span class="site-logo"><span class="logo"><i class="icon pi pi-box"></i></span><b>ModernStock</b></span>
+    </ng-template>
+    <nav class="site-mobile" id="site-mobile" [attr.aria-label]="'nav.menu' | translate">
+      @for (item of pages; track item.page) {
+        <a [routerLink]="site.link(item.page)" routerLinkActive="active" (click)="menuOpen.set(false)">{{ item.key | translate }}</a>
+      }
+      <a [routerLink]="site.otherLangUrl()" (click)="menuOpen.set(false)">
+        <ms-flag [lang]="site.lang() === 'km' ? 'en' : 'km'" />{{ 'nav.switchLanguage' | translate }}
+      </a>
+      <button class="row-link" type="button" (click)="theme.toggle()">
+        <i class="icon pi" [class.pi-sun]="theme.dark()" [class.pi-moon]="!theme.dark()"></i>
+        {{ (theme.dark() ? 'nav.lightMode' : 'nav.darkMode') | translate }}
+      </button>
+      <div class="site-mobile-actions">
+        <a pButton [href]="site.appUrl('sign-up')"><span pButtonLabel>{{ 'nav.startFree' | translate }}</span></a>
+        <a pButton [outlined]="true" [href]="site.appUrl('login')"><span pButtonLabel>{{ 'nav.login' | translate }}</span></a>
+      </div>
+    </nav>
+  </p-drawer>
+}

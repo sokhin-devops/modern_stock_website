@@ -29,51 +29,58 @@
           <span class="stat-icon"><i class="icon pi pi-check-circle"></i></span>
           <h2>{{ 'contact.sent' | translate }}</h2>
           <p class="muted">{{ 'contact.sentLead' | translate }}</p>
-          <button class="btn btn-outlined" type="button" (click)="state.set('form')">{{ 'contact.sendAnother' | translate }}</button>
+          <button pButton type="button" [outlined]="true" (click)="state.set('form')"><span pButtonLabel>{{ 'contact.sendAnother' | translate }}</span></button>
         </div>
       } @else {
         <h2>{{ 'contact.formTitle' | translate }}</h2>
         <p class="lead">{{ 'contact.formLead' | translate }}</p>
-        <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
-          <div class="field">
-            <label class="label" for="c-name">{{ 'contact.name' | translate }}</label>
-            <input class="input" id="c-name" formControlName="name" autocomplete="name" [class.invalid]="showError('name')" />
+        <form class="contact-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+          <div class="ms-field">
+            <p-floatlabel variant="on">
+              <input pInputText id="c-name" formControlName="name" autocomplete="name" />
+              <label for="c-name">{{ 'contact.name' | translate }} *</label>
+            </p-floatlabel>
             @if (showError('name')) {
-              <small class="error">{{ 'contact.required' | translate }}</small>
+              <small class="field-error">{{ 'contact.required' | translate }}</small>
             }
           </div>
           <div class="field-row">
-            <div class="field">
-              <label class="label" for="c-phone">{{ 'contact.phoneField' | translate }}</label>
-              <input class="input" id="c-phone" type="tel" formControlName="phone" autocomplete="tel" placeholder="012 345 678"
-                     [class.invalid]="showError('phone')" />
+            <div class="ms-field">
+              <p-floatlabel variant="on">
+                <input pInputText id="c-phone" type="tel" formControlName="phone" autocomplete="tel" placeholder="012 345 678" />
+                <label for="c-phone">{{ 'contact.phoneField' | translate }} *</label>
+              </p-floatlabel>
               @if (showError('phone')) {
-                <small class="error">
+                <small class="field-error">
                   {{ (form.controls.phone.hasError('required') ? 'contact.required' : 'contact.phoneInvalid') | translate }}
                 </small>
               }
             </div>
-            <div class="field">
-              <label class="label" for="c-email">{{ 'contact.email' | translate }}</label>
-              <input class="input" id="c-email" type="email" formControlName="email" autocomplete="email" [class.invalid]="showError('email')" />
+            <div class="ms-field">
+              <p-floatlabel variant="on">
+                <input pInputText id="c-email" type="email" formControlName="email" autocomplete="email" />
+                <label for="c-email">{{ 'contact.email' | translate }}</label>
+              </p-floatlabel>
               @if (showError('email')) {
-                <small class="error">{{ 'contact.emailInvalid' | translate }}</small>
+                <small class="field-error">{{ 'contact.emailInvalid' | translate }}</small>
               }
             </div>
           </div>
-          <div class="field">
-            <label class="label" for="c-message">{{ 'contact.message' | translate }}</label>
-            <textarea class="textarea" id="c-message" rows="5" formControlName="message" [class.invalid]="showError('message')"></textarea>
+          <div class="ms-field">
+            <p-floatlabel variant="on">
+              <textarea pTextarea id="c-message" rows="5" formControlName="message" [autoResize]="true"></textarea>
+              <label for="c-message">{{ 'contact.message' | translate }} *</label>
+            </p-floatlabel>
             @if (showError('message')) {
-              <small class="error">{{ 'contact.required' | translate }}</small>
+              <small class="field-error">{{ 'contact.required' | translate }}</small>
             }
           </div>
           @if (state() === 'error') {
-            <p class="error send-error" role="alert">{{ 'contact.error' | translate }}</p>
+            <p-message severity="error" icon="pi pi-exclamation-circle" role="alert">{{ 'contact.error' | translate }}</p-message>
           }
-          <button class="btn btn-primary btn-lg btn-block" type="submit" [disabled]="state() === 'sending'">
-            <span class="icon">{{ state() === 'sending' ? 'progress_activity' : 'send' }}</span>
-            {{ (state() === 'sending' ? 'contact.sending' : 'contact.send') | translate }}
+          <button pButton type="submit" size="large" class="send" [loading]="state() === 'sending'" [disabled]="state() === 'sending'">
+            <i class="pi pi-send" pButtonIcon></i>
+            <span pButtonLabel>{{ (state() === 'sending' ? 'contact.sending' : 'contact.send') | translate }}</span>
           </button>
         </form>
       }

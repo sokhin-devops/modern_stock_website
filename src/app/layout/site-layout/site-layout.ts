@@ -1,5 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
+import { ScrollTop } from 'primeng/scrolltop';
 
 import { Lang } from '../../core/i18n';
 import { SiteService } from '../../core/site.service';
@@ -9,7 +11,7 @@ import { SiteHeader } from '../site-header/site-header';
 /** Every page sits under /km or /en; this sets the language before the page renders (and prerenders). */
 @Component({
   selector: 'ms-site-layout',
-  imports: [RouterOutlet, SiteHeader, SiteFooter],
+  imports: [RouterOutlet, TranslatePipe, ScrollTop, SiteHeader, SiteFooter],
   templateUrl: './site-layout.html',
   styleUrl: './site-layout.scss',
 })

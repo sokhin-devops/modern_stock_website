@@ -1,11 +1,11 @@
 # modern_stock_website
 
-The public website of **ModernStock** (PLAIN.md 12.1). It is built with Angular 22 and prerendered to static HTML in Khmer and English, so it loads fast, works for search engines and link previews, and needs no Node server in production.
+The public website of **ModernStock** (PLAIN.md 12.1). It is built with Angular 19 and PrimeNG 19 (Material preset), and prerendered to static HTML in Khmer and English, so it loads fast, works for search engines and link previews, and needs no Node server in production.
 
 | | |
 |---|---|
 | Pages | Home, Features, Pricing, FAQ, About us, Contact, Terms of use, Privacy policy, under `/km/...` and `/en/...`. `/` goes to `/km` |
-| Stack | Angular 22 (standalone, signals, zoneless), Tailwind CSS v4, SCSS, ngx-translate, prerendering with `@angular/ssr` |
+| Stack | Angular 19.2 (standalone, signals), PrimeNG 19.1.4 with the Material preset + PrimeIcons, Tailwind CSS v4, SCSS, ngx-translate, prerendering with `@angular/ssr` |
 | Design | The approved prototype ([doc/plain/UX_UI/prototype/website.html](../doc/plain/UX_UI/prototype/website.html)), ported 1:1 |
 | API | `GET /public/plans` (Pricing) and `POST /public/contact` (Contact form), from [modern_stock_api](../modern_stock_api) |
 
@@ -44,12 +44,13 @@ Every component has three files: `.ts`, `.html` and `.scss`.
 src/
 ├── i18n/                 en.json, km.json: all website text (bundled, not fetched, so prerendering has it)
 ├── styles/_prototype.scss  tokens, buttons, inputs and website sections copied from the prototype
-├── styles.scss           global styles (imports the prototype styles)
+├── styles.scss           global styles: the prototype styles, the PrimeIcons box, PrimeNG button and field sizes
 ├── tailwind.css          Tailwind v4 setup and layer order
 ├── environments/         siteUrl, apiUrl, appUrl, contact details
 └── app/
     ├── core/             i18n loader, SiteService (language and links), SeoService (title, Open Graph,
-    │                     hreflang), ThemeModeService (dark mode), PlansService, ContactService
+    │                     hreflang), ThemeModeService (dark mode), PlansService, ContactService,
+    │                     theme/modern-stock-preset.ts (PrimeNG theme, the same file as in the web app)
     ├── layout/           site-layout (sets the language), site-header, site-footer
     ├── sections/         hero, why, features, cambodia, how, pricing-plans, faq-list, cta-band, page-hero
     ├── pages/            home, features-page, pricing-page, faq-page, about-page, contact-page,
@@ -71,4 +72,9 @@ src/
   - It stays up at least 0.45 s, and waits at most 1.5 s for fonts.
   - If JavaScript never runs, CSS hides it after 4 s.
   - It follows dark mode and "reduce motion".
-- **No PrimeNG:** the website doesn't use it. PrimeNG 22 is now under the commercial PrimeUI License, which needs a license key; the website's few form controls use the prototype's own `.input` and `.btn` styles instead.
+- **PrimeNG:** the website uses the same PrimeNG theme as the web app ([modern-stock-preset.ts](src/app/core/theme/modern-stock-preset.ts), keep the two copies the same):
+  - buttons (`pButton`), the phone menu (`p-drawer`, loaded the first time it opens), the FAQ (`p-accordion`), the Monthly / Yearly switch on the plans (`p-selectbutton`), the contact form fields (`p-floatlabel`, `pInputText`, `pTextarea`, `p-message`), the back-to-top button (`p-scrolltop`) and PrimeIcons;
+  - PrimeNG's styles are in the `primeng` CSS layer and are written into the prerendered pages, so a page looks right before any JavaScript runs;
+  - the FAQ answers are part of every prerendered page, closed ones only hidden, so search engines read them.
+- **PrimeNG 19.1.4, no license key:** it is the last MIT release of PrimeNG 19; later 19.x releases end in `-lts` and need a paid key, and so does PrimeNG for newer Angular. That is why `primeng` and `@primeng/themes` are pinned to exactly `19.1.4` and the website runs on Angular 19. Don't upgrade either one to an `-lts` version.
+- **Angular 19:** it runs with zone.js. The server render needs the `BootstrapContext` argument in [main.server.ts](src/main.server.ts) (a fix Angular back-ported to 19.2). There is no built-in unit-test runner, so there is no `npm test` yet.
