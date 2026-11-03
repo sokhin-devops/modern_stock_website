@@ -12,11 +12,11 @@ import { Reveal } from '../../shared/reveal';
 })
 export class Cambodia {
   protected readonly points = [
-    { n: 1, icon: 'translate' },
-    { n: 2, icon: 'receipt_long' },
-    { n: 3, icon: 'currency_exchange' },
-    { n: 4, icon: 'qr_code_2' },
-    { n: 5, icon: 'request_quote' },
-    { n: 6, icon: 'qr_code_scanner' },
+    { n: 1, icon: 'pi pi-language' },
+    { n: 2, icon: 'pi pi-receipt' },
+    { n: 3, icon: 'pi pi-money-bill' },
+    { n: 4, icon: 'pi pi-qrcode' },
+    { n: 5, icon: 'pi pi-file' },
+    { n: 6, icon: 'pi pi-barcode' },
   ];
 }

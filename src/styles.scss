@@ -1,3 +1,73 @@
 // Global styles shared by every page: the prototype's tokens, buttons, and website sections.
 // Styles that belong to one component live in that component's .scss file.
+// PrimeNG's own styles come from the theme preset (app/core/theme/modern-stock-preset.ts) in the "primeng" layer;
+// the rules below fit PrimeNG components into the prototype's sizes.
 @use "styles/prototype";
+
+// PrimeIcons in the prototype's icon box: <i class="icon pi pi-box"></i> takes a square of the prototype's size.
+// PrimeIcons glyphs fill more of their box than Material Symbols (which the prototype was drawn with), so the glyph
+// is drawn at 90 % to keep the same visual weight. Not layered: it must beat the PrimeIcons stylesheet.
+.pi.icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1em;
+  height: 1em;
+
+  &::before {
+    font-size: 0.9em;
+  }
+}
+
+// Buttons at the prototype's sizes: 15 px text and 40 px tall; large ones (size="large") 16 px and 48 px.
+.p-button {
+  min-height: 40px;
+  font-size: 15px;
+}
+
+.p-button-icon-only {
+  min-height: 0;
+}
+
+.p-button.p-button-lg {
+  min-height: 48px;
+  padding-inline: 28px;
+  font-size: 16px;
+}
+
+@layer components {
+  // Form fields (contact form): the floating-label input, then its error line.
+  .ms-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .ms-field .p-floatlabel,
+  .ms-field .p-inputtext,
+  .ms-field .p-textarea {
+    width: 100%;
+  }
+
+  .field-error {
+    padding: 0 14px;
+    color: var(--danger);
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  // An example such as "012 345 678" shows only in a focused field, once the label has moved up.
+  .p-floatlabel :is(input, textarea)::placeholder {
+    opacity: 0;
+    transition: opacity 0.15s var(--ease);
+  }
+
+  .p-floatlabel :is(input, textarea):focus::placeholder {
+    opacity: 1;
+  }
+
+  // Choices as one row of buttons (Monthly / Yearly), like the prototype's segmented control.
+  .p-selectbutton .p-togglebutton {
+    font-size: 14px;
+  }
+}

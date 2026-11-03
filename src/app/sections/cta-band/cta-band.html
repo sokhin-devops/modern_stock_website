@@ -6,8 +6,8 @@
         <p>{{ 'cta.lead' | translate }}</p>
       </div>
       <div class="ws-cta">
-        <a class="btn btn-lg btn-light" [href]="site.appUrl('sign-up')">{{ 'cta.start' | translate }}</a>
-        <a class="btn btn-lg btn-ghost" [href]="site.appUrl('login')">{{ 'cta.login' | translate }}</a>
+        <a pButton size="large" class="cta-light" [href]="site.appUrl('sign-up')"><span pButtonLabel>{{ 'cta.start' | translate }}</span></a>
+        <a pButton size="large" class="cta-ghost" [outlined]="true" [href]="site.appUrl('login')"><span pButtonLabel>{{ 'cta.login' | translate }}</span></a>
       </div>
     </div>
   </div>

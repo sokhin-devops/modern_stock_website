@@ -7,7 +7,7 @@
       </div>
       <div class="ws-points">
         @for (p of points; track p.n) {
-          <div class="ws-point"><span class="icon">{{ p.icon }}</span><span>{{ 'cambodia.p' + p.n | translate }}</span></div>
+          <div class="ws-point"><i class="icon" [class]="p.icon"></i><span>{{ 'cambodia.p' + p.n | translate }}</span></div>
         }
       </div>
     </div>

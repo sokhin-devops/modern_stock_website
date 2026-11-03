@@ -4,29 +4,29 @@
   <div class="site-container contact-grid">
     <div class="contact-list">
       <a class="contact-item" [href]="'tel:' + site.env.phone.replaceAll(' ', '')">
-        <span class="ws-icon"><span class="icon">call</span></span>
+        <span class="ws-icon"><i class="icon pi pi-phone"></i></span>
         <span><small>{{ 'contact.phone' | translate }}</small>{{ site.env.phone }}</span>
       </a>
       <a class="contact-item" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-        <span class="ws-icon"><span class="icon">send</span></span>
+        <span class="ws-icon"><i class="icon pi pi-telegram"></i></span>
         <span><small>{{ 'contact.telegram' | translate }}</small>{{ site.env.telegramUrl.replace('https://', '') }}</span>
       </a>
       <a class="contact-item" [href]="site.env.facebookUrl" target="_blank" rel="noopener">
-        <span class="ws-icon"><span class="icon">thumb_up</span></span>
+        <span class="ws-icon"><i class="icon pi pi-facebook"></i></span>
         <span><small>{{ 'contact.facebook' | translate }}</small>ModernStock</span>
       </a>
       <a class="contact-item" [href]="mapUrl" target="_blank" rel="noopener">
-        <span class="ws-icon"><span class="icon">location_on</span></span>
+        <span class="ws-icon"><i class="icon pi pi-map-marker"></i></span>
         <span><small>{{ 'contact.address' | translate }}</small>{{ 'contact.addressText' | translate }}</span>
         <span class="spacer"></span>
-        <span class="open-map">{{ 'contact.openMap' | translate }}<span class="icon">open_in_new</span></span>
+        <span class="open-map">{{ 'contact.openMap' | translate }}<i class="icon pi pi-external-link"></i></span>
       </a>
     </div>
 
     <div class="form-card">
       @if (state() === 'sent') {
         <div class="sent" role="status">
-          <span class="stat-icon"><span class="icon">mark_email_read</span></span>
+          <span class="stat-icon"><i class="icon pi pi-check-circle"></i></span>
           <h2>{{ 'contact.sent' | translate }}</h2>
           <p class="muted">{{ 'contact.sentLead' | translate }}</p>
           <button class="btn btn-outlined" type="button" (click)="state.set('form')">{{ 'contact.sendAnother' | translate }}</button>

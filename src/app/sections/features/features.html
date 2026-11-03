@@ -8,7 +8,7 @@
     <div class="ws-features" msReveal>
       @for (f of items; track f.key) {
         <article class="ws-feature">
-          <span class="ws-icon"><span class="icon">{{ f.icon }}</span></span>
+          <span class="ws-icon"><i class="icon" [class]="f.icon"></i></span>
           <h3>{{ 'features.' + f.key + '.t' | translate }}</h3>
           <p>{{ 'features.' + f.key + '.d' | translate }}</p>
         </article>
@@ -16,8 +16,8 @@
     </div>
     @if (showMore()) {
       <div class="mt-10 flex justify-center">
-        <a class="btn btn-outlined" [routerLink]="site.link('features')">
-          {{ 'features.allFeatures' | translate }}<span class="icon">arrow_forward</span>
+        <a pButton [outlined]="true" [routerLink]="site.link('features')">
+          <span pButtonLabel>{{ 'features.allFeatures' | translate }}</span><i class="pi pi-arrow-right" pButtonIcon></i>
         </a>
       </div>
     }

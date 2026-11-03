@@ -7,6 +7,13 @@
         <p>{{ 'pricing.lead' | translate }}</p>
       </div>
     }
+
+    <div class="billing">
+      <span id="billing-period" class="sr-only">{{ 'pricing.billingPeriod' | translate }}</span>
+      <p-selectbutton [options]="billingOptions()" optionLabel="label" optionValue="value" [allowEmpty]="false"
+                      [ngModel]="billing()" (ngModelChange)="billing.set($event)" ariaLabelledBy="billing-period" />
+    </div>
+
     <div class="ws-plans" msReveal>
       @for (plan of plans.plans(); track plan.code) {
         <div class="ws-plan" [class.featured]="plan.code === 'PRO'">
@@ -17,23 +24,35 @@
             }
           </div>
           <p>{{ 'pricing.desc' + plan.code | translate }}</p>
-          <div class="ws-price">${{ plan.priceMonthly }} <small>{{ 'pricing.perMonth' | translate }}</small></div>
+          @if (yearly() && plan.priceYearly !== null) {
+            <div class="ws-price">${{ plan.priceYearly }} <small>{{ 'pricing.perYear' | translate }}</small></div>
+            <small class="per-month">
+              @if (plan.priceYearly > 0) {
+                {{ 'pricing.yearlyMonthly' | translate: { price: monthly(plan.priceYearly) } }}
+              } @else {
+                &nbsp;
+              }
+            </small>
+          } @else {
+            <div class="ws-price">${{ plan.priceMonthly }} <small>{{ 'pricing.perMonth' | translate }}</small></div>
+          }
           <ul class="check-list">
-            <li><span class="icon">check</span><span>{{ limitText(plan, 'branches') | translate: { n: plan.limits['branches'] } }}</span></li>
-            <li><span class="icon">check</span><span>{{ 'pricing.members' | translate: { n: plan.limits['members'] } }}</span></li>
+            <li><i class="icon pi pi-check"></i><span>{{ limitText(plan, 'branches') | translate: { n: plan.limits['branches'] } }}</span></li>
+            <li><i class="icon pi pi-check"></i><span>{{ 'pricing.members' | translate: { n: plan.limits['members'] } }}</span></li>
             <li>
-              <span class="icon">check</span>
+              <i class="icon pi pi-check"></i>
               <span>{{ limitText(plan, 'products') | translate: { n: format(plan.limits['products']) } }}</span>
             </li>
             @for (key of features; track key) {
               <li [class.no]="!plan.limits[key]">
-                <span class="icon">{{ plan.limits[key] ? 'check' : 'remove' }}</span>
+                <i class="icon pi" [class.pi-check]="plan.limits[key]" [class.pi-minus]="!plan.limits[key]"></i>
                 <span>{{ 'pricing.' + key | translate }}</span>
               </li>
             }
           </ul>
-          <a class="btn" [class.btn-primary]="plan.code === 'PRO'" [class.btn-outlined]="plan.code !== 'PRO'"
-             [href]="site.appUrl('sign-up')">{{ 'pricing.cta' + plan.code | translate }}</a>
+          <a pButton [outlined]="plan.code !== 'PRO'" [href]="site.appUrl('sign-up')">
+            <span pButtonLabel>{{ 'pricing.cta' + plan.code | translate }}</span>
+          </a>
         </div>
       }
     </div>

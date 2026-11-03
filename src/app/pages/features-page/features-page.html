@@ -5,11 +5,11 @@
     <div class="detail-grid">
       @for (group of groups; track group.key) {
         <article class="detail" msReveal>
-          <span class="ws-icon"><span class="icon">{{ group.icon }}</span></span>
+          <span class="ws-icon"><i class="icon" [class]="group.icon"></i></span>
           <h2>{{ 'featuresPage.' + group.key + 'Title' | translate }}</h2>
           <ul class="check-list">
             @for (n of range(group.items); track n) {
-              <li><span class="icon">check</span><span>{{ 'featuresPage.' + group.key + n | translate }}</span></li>
+              <li><i class="icon pi pi-check"></i><span>{{ 'featuresPage.' + group.key + n | translate }}</span></li>
             }
           </ul>
         </article>

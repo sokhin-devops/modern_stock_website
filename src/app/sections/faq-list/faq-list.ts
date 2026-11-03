@@ -1,6 +1,8 @@
 import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { Accordion, AccordionContent, AccordionHeader, AccordionPanel } from 'primeng/accordion';
+import { ButtonDirective, ButtonIcon, ButtonLabel } from 'primeng/button';
 
 import { SiteService } from '../../core/site.service';
 import { Reveal } from '../../shared/reveal';
@@ -9,10 +11,16 @@ export const FAQ_KEYS = [
   'afterTrial', 'phones', 'receipts', 'staffEmail', 'manyBusinesses', 'privacy', 'rate', 'offline', 'pay', 'cancel',
 ];
 
-/** Questions as native <details>: they open without JavaScript, and search engines read the answers. */
+/**
+ * Questions in a PrimeNG accordion, drawn as the prototype's flat list. Every answer is part of the prerendered page
+ * (closed ones are only hidden), so search engines read them all.
+ */
 @Component({
   selector: 'ms-faq-list',
-  imports: [RouterLink, TranslatePipe, Reveal],
+  imports: [
+    RouterLink, TranslatePipe, Accordion, AccordionPanel, AccordionHeader, AccordionContent, ButtonDirective, ButtonIcon,
+    ButtonLabel, Reveal,
+  ],
   templateUrl: './faq-list.html',
   styleUrl: './faq-list.scss',
 })

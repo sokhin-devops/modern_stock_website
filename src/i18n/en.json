@@ -30,7 +30,9 @@
     "darkMode": "Dark mode",
     "lightMode": "Light mode",
     "switchLanguage": "ភាសាខ្មែរ",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "close": "Close",
+    "backToTop": "Back to top"
   },
   "home": {
     "eyebrow": "Made for Cambodian shops",
@@ -165,7 +167,7 @@
     "lead": "Every new business gets 30 days of Pro. No payment needed to start.",
     "perMonth": "/ month",
     "popular": "Popular",
-    "note": "Prices in USD, paid monthly. Cancel any time; your data stays.",
+    "note": "Prices in USD, paid monthly or yearly. Cancel any time; your data stays.",
     "descFREE": "For one small shop",
     "descBASIC": "For a growing shop",
     "descPRO": "For several branches",
@@ -188,7 +190,15 @@
     "rowPrice": "Price",
     "rowBranches": "Branches",
     "rowMembers": "Members",
-    "rowProducts": "Products"
+    "rowProducts": "Products",
+    "monthly": "Monthly",
+    "yearlyOption": "Yearly",
+    "monthsFree": "{{n}} months free",
+    "perYear": "/ year",
+    "yearlyMonthly": "${{price}} a month, billed yearly",
+    "billingPeriod": "Billing period",
+    "included": "Included",
+    "notIncluded": "Not included"
   },
   "faq": {
     "kicker": "FAQ",

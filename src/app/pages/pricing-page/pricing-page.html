@@ -46,9 +46,9 @@
               @for (plan of plans.plans(); track plan.code) {
                 <td class="c">
                   @if (plan.limits[key]) {
-                    <span class="icon yes" aria-label="Yes">check</span>
+                    <i class="icon pi pi-check yes" role="img" [attr.aria-label]="'pricing.included' | translate"></i>
                   } @else {
-                    <span class="icon no" aria-label="No">remove</span>
+                    <i class="icon pi pi-minus no" role="img" [attr.aria-label]="'pricing.notIncluded' | translate"></i>
                   }
                 </td>
               }

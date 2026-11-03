@@ -23,14 +23,14 @@ interface FeatureGroup {
 })
 export class FeaturesPage {
   protected readonly groups: FeatureGroup[] = [
-    { key: 'pos', icon: 'point_of_sale', items: 5 },
-    { key: 'buy', icon: 'local_shipping', items: 4 },
-    { key: 'stock', icon: 'inventory_2', items: 4 },
-    { key: 'branch', icon: 'storefront', items: 3 },
-    { key: 'debt', icon: 'account_balance_wallet', items: 3 },
-    { key: 'team', icon: 'group', items: 3 },
-    { key: 'report', icon: 'bar_chart', items: 4 },
-    { key: 'tg', icon: 'send', items: 3 },
+    { key: 'pos', icon: 'pi pi-shopping-cart', items: 5 },
+    { key: 'buy', icon: 'pi pi-truck', items: 4 },
+    { key: 'stock', icon: 'pi pi-box', items: 4 },
+    { key: 'branch', icon: 'pi pi-shop', items: 3 },
+    { key: 'debt', icon: 'pi pi-wallet', items: 3 },
+    { key: 'team', icon: 'pi pi-users', items: 3 },
+    { key: 'report', icon: 'pi pi-chart-bar', items: 4 },
+    { key: 'tg', icon: 'pi pi-telegram', items: 3 },
   ];
 
   constructor() {

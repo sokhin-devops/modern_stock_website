@@ -12,7 +12,13 @@
 
 // Small phones in Khmer: the logo alone, so the longer "Start free" button and the menu still fit.
 @media (max-width: 400px) {
-  :host-context(html[lang='km']) .site-logo b {
+  :host-context(html[lang='km']) .site-nav .site-logo b {
     display: none;
   }
+}
+
+// The phone menu (PrimeNG drawer): the flag in line with the language link.
+.site-mobile .flag {
+  width: 22px;
+  height: 22px;
 }

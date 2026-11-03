@@ -1,3 +1,17 @@
 :host {
   display: block;
 }
+
+// The Monthly / Yearly switch, centered above the cards.
+.billing {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+// Under a yearly price: what it costs a month (an empty line on Free keeps the cards aligned).
+.per-month {
+  margin-top: -14px;
+  color: var(--muted);
+  font-size: 13px;
+}

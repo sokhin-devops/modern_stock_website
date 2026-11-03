@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { ButtonDirective, ButtonLabel } from 'primeng/button';
 
 import { SiteService } from '../../core/site.service';
 
 /** Headline, calls to action, and a small copy of the real app (dashboard, riel change, Telegram summary). */
 @Component({
   selector: 'ms-hero',
-  imports: [RouterLink, TranslatePipe],
+  imports: [RouterLink, TranslatePipe, ButtonDirective, ButtonLabel],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })

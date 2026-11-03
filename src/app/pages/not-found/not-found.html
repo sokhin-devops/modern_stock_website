@@ -1,6 +1,6 @@
 <section class="site-container not-found">
-  <span class="ws-icon"><span class="icon">explore_off</span></span>
+  <span class="ws-icon"><i class="icon pi pi-compass"></i></span>
   <h1>{{ 'notFound.title' | translate }}</h1>
   <p class="muted">{{ 'notFound.lead' | translate }}</p>
-  <a class="btn btn-primary" [routerLink]="site.link()">{{ 'notFound.home' | translate }}</a>
+  <a pButton [routerLink]="site.link()"><i class="pi pi-arrow-left" pButtonIcon></i><span pButtonLabel>{{ 'notFound.home' | translate }}</span></a>
 </section>

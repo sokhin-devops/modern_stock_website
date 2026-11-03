@@ -5,27 +5,34 @@
         <span class="ws-kicker">{{ 'faq.kicker' | translate }}</span>
         <h2>{{ (title() ?? 'faq.title') | translate }}</h2>
         <p>{{ 'faq.lead' | translate }}</p>
-        <a class="btn btn-outlined" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-          <span class="icon">send</span><span>{{ 'faq.telegram' | translate }}</span>
+        <a pButton [outlined]="true" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+          <i class="pi pi-telegram" pButtonIcon></i><span pButtonLabel>{{ 'faq.telegram' | translate }}</span>
         </a>
         @if (showAll()) {
-          <a class="btn btn-text" [routerLink]="site.link('faq')">{{ 'faq.all' | translate }}<span class="icon">arrow_forward</span></a>
+          <a pButton [text]="true" [routerLink]="site.link('faq')">
+            <span pButtonLabel>{{ 'faq.all' | translate }}</span><i class="pi pi-arrow-right" pButtonIcon></i>
+          </a>
         }
       </div>
     }
+    <!-- Several answers can be open at once; the first starts open. Closed answers stay in the page for search engines. -->
     <div class="ws-faq" msReveal>
-      @for (key of keys(); track key; let first = $first) {
-        <details [open]="first">
-          <summary>{{ 'faq.' + key + '.q' | translate }}</summary>
-          <p>{{ 'faq.' + key + '.a' | translate }}</p>
-        </details>
-      }
+      <p-accordion [multiple]="true" [value]="[keys()[0]]" expandIcon="pi pi-chevron-down" collapseIcon="pi pi-chevron-up">
+        @for (key of keys(); track key) {
+          <p-accordion-panel [value]="key">
+            <p-accordion-header>{{ 'faq.' + key + '.q' | translate }}</p-accordion-header>
+            <p-accordion-content>
+              <p>{{ 'faq.' + key + '.a' | translate }}</p>
+            </p-accordion-content>
+          </p-accordion-panel>
+        }
+      </p-accordion>
     </div>
     @if (!aside()) {
       <div class="ws-faq-more">
         <p>{{ 'faq.lead' | translate }}</p>
-        <a class="btn btn-outlined" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-          <span class="icon">send</span><span>{{ 'faq.telegram' | translate }}</span>
+        <a pButton [outlined]="true" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+          <i class="pi pi-telegram" pButtonIcon></i><span pButtonLabel>{{ 'faq.telegram' | translate }}</span>
         </a>
       </div>
     }

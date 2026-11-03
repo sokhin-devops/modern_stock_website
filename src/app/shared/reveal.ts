@@ -1,4 +1,5 @@
-import { DOCUMENT, Directive, ElementRef, afterNextRender, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Directive, ElementRef, afterNextRender, inject } from '@angular/core';
 
 let observer: IntersectionObserver | null = null;
 
