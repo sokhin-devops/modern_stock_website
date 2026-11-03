@@ -1,0 +1,14 @@
+/* Tailwind v4 in plain CSS (it doesn't run through Sass), listed before styles.scss in angular.json.
+   Layer order: Tailwind theme and base, then PrimeNG, then our components, then Tailwind utilities,
+   so a utility class always wins and PrimeNG never overrides our components. */
+@layer theme, base, primeng, components, utilities;
+
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+
+/* Dark mode follows the .app-dark class on <html>, like the prototype and PrimeNG. */
+@custom-variant dark (&:where(.app-dark, .app-dark *));
+
+@theme {
+  --font-sans: "Roboto", "Kantumruy Pro", "Noto Sans Khmer", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
