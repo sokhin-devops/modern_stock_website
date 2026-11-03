@@ -1,0 +1,62 @@
+import { DOCUMENT, Injectable, inject } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
+
+import { environment } from '../../environments/environment';
+import { LANGS } from './i18n';
+import { SiteService } from './site.service';
+
+/**
+ * Title, description, Open Graph tags (so links shared on Facebook and Telegram look right, PLAIN.md 4),
+ * the canonical URL, and links to the same page in the other language.
+ */
+@Injectable({ providedIn: 'root' })
+export class SeoService {
+  private readonly title = inject(Title);
+  private readonly meta = inject(Meta);
+  private readonly translate = inject(TranslateService);
+  private readonly site = inject(SiteService);
+  private readonly document = inject(DOCUMENT);
+
+  /** titleKey and descriptionKey are under "meta" in the translation files; page is the path after /km. */
+  set(titleKey: string, descriptionKey: string | null, page = ''): void {
+    const keys = ['meta.siteName', `meta.${titleKey}`, ...(descriptionKey ? [`meta.${descriptionKey}`] : [])];
+    this.translate.get(keys).subscribe((t: Record<string, string>) => {
+      const name = t['meta.siteName'];
+      const pageTitle = t[`meta.${titleKey}`];
+      const fullTitle = page ? `${pageTitle} · ${name}` : pageTitle;
+      const description = descriptionKey ? t[`meta.${descriptionKey}`] : t['meta.homeDescription'] ?? '';
+      const lang = this.site.lang();
+      const url = `${environment.siteUrl}/${lang}${page ? '/' + page : ''}`;
+
+      this.title.setTitle(fullTitle);
+      this.meta.updateTag({ name: 'description', content: description });
+      this.meta.updateTag({ property: 'og:title', content: fullTitle });
+      this.meta.updateTag({ property: 'og:description', content: description });
+      this.meta.updateTag({ property: 'og:type', content: 'website' });
+      this.meta.updateTag({ property: 'og:url', content: url });
+      this.meta.updateTag({ property: 'og:site_name', content: name });
+      this.meta.updateTag({ property: 'og:locale', content: lang === 'km' ? 'km_KH' : 'en_US' });
+      this.meta.updateTag({ property: 'og:image', content: `${environment.siteUrl}/og-image.png` });
+
+      this.setLink('canonical', url);
+      for (const other of LANGS) {
+        this.setLink('alternate', `${environment.siteUrl}/${other}${page ? '/' + page : ''}`, other);
+      }
+    });
+  }
+
+  private setLink(rel: string, href: string, hreflang?: string): void {
+    const selector = hreflang ? `link[rel="${rel}"][hreflang="${hreflang}"]` : `link[rel="${rel}"]:not([hreflang])`;
+    let link = this.document.head.querySelector<HTMLLinkElement>(selector);
+    if (!link) {
+      link = this.document.createElement('link');
+      link.rel = rel;
+      if (hreflang) {
+        link.hreflang = hreflang;
+      }
+      this.document.head.appendChild(link);
+    }
+    link.href = href;
+  }
+}

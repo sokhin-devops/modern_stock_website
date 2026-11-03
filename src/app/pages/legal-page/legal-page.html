@@ -1,0 +1,13 @@
+<ms-page-hero kicker="footer.legal" [title]="'meta.' + page + 'Title'" />
+
+<section class="ws-section">
+  <article class="site-container prose">
+    <p class="draft"><span class="icon">info</span>{{ 'legal.draft' | translate }}</p>
+    <p class="updated">{{ 'legal.updated' | translate }}</p>
+    <p>{{ 'legal.' + page + 'Intro' | translate }}</p>
+    @for (s of sections; track s) {
+      <h2>{{ 'legal.' + page + s + 'T' | translate }}</h2>
+      <p>{{ 'legal.' + page + s | translate }}</p>
+    }
+  </article>
+</section>

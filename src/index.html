@@ -1,13 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="km">
 <head>
   <meta charset="utf-8">
-  <title>ModernStockWebsite</title>
+  <title>ModernStock</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#1a73e8">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Kantumruy+Pro:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block">
+  <script>
+    // Apply the saved light or dark choice before the page paints (see ThemeModeService).
+    try { if (localStorage.getItem('ms-theme') === 'dark') document.documentElement.classList.add('app-dark'); } catch (e) {}
+  </script>
 </head>
-<body>
+<body class="site">
   <app-root></app-root>
 </body>
 </html>

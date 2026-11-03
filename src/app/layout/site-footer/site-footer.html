@@ -1,0 +1,45 @@
+<footer class="ws-footer">
+  <div class="site-container">
+    <div class="ws-footer-grid">
+      <div class="ws-footer-brand">
+        <a class="site-logo" [routerLink]="site.link()">
+          <span class="logo"><span class="icon">inventory_2</span></span><b>ModernStock</b>
+        </a>
+        <p>{{ 'footer.tagline' | translate }}</p>
+      </div>
+      <div>
+        <h4>{{ 'footer.product' | translate }}</h4>
+        <ul>
+          <li><a [routerLink]="site.link('features')">{{ 'nav.features' | translate }}</a></li>
+          <li><a [routerLink]="site.link('pricing')">{{ 'nav.pricing' | translate }}</a></li>
+          <li><a [routerLink]="site.link('faq')">{{ 'nav.faq' | translate }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{{ 'footer.company' | translate }}</h4>
+        <ul>
+          <li><a [routerLink]="site.link('about')">{{ 'nav.about' | translate }}</a></li>
+          <li><a [routerLink]="site.link('contact')">{{ 'nav.contact' | translate }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{{ 'footer.legal' | translate }}</h4>
+        <ul>
+          <li><a [routerLink]="site.link('terms')">{{ 'footer.terms' | translate }}</a></li>
+          <li><a [routerLink]="site.link('privacy')">{{ 'footer.privacy' | translate }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{{ 'footer.follow' | translate }}</h4>
+        <ul>
+          <li><a [href]="site.env.telegramUrl" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a [href]="site.env.facebookUrl" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ws-footer-bottom">
+      <span>© {{ year }} ModernStock</span>
+      <span>{{ 'footer.thesis' | translate }}</span>
+    </div>
+  </div>
+</footer>

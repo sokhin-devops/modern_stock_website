@@ -71,12 +71,30 @@
     "title": "Everything in one place",
     "lead": "Buying, selling, and stock for one shop or many branches.",
     "allFeatures": "See all features",
-    "pos": { "t": "POS in USD and KHR", "d": "Scan, take dollars, riel, or KHQR, and give change in riel." },
-    "stock": { "t": "Stock you can trust", "d": "Batches, expiry dates, and a full history for every product." },
-    "credit": { "t": "Credit and debts", "d": "See who owes you and what you owe, with due dates." },
-    "branches": { "t": "Many branches", "d": "Stock per branch and warehouse, with transfers between them." },
-    "telegram": { "t": "Telegram alerts", "d": "A daily summary at 07:00 with sales, profit, and low stock." },
-    "reports": { "t": "Clear reports", "d": "Profit, debts, reorder suggestions, and ABC analysis." }
+    "pos": {
+      "t": "POS in USD and KHR",
+      "d": "Scan, take dollars, riel, or KHQR, and give change in riel."
+    },
+    "stock": {
+      "t": "Stock you can trust",
+      "d": "Batches, expiry dates, and a full history for every product."
+    },
+    "credit": {
+      "t": "Credit and debts",
+      "d": "See who owes you and what you owe, with due dates."
+    },
+    "branches": {
+      "t": "Many branches",
+      "d": "Stock per branch and warehouse, with transfers between them."
+    },
+    "telegram": {
+      "t": "Telegram alerts",
+      "d": "A daily summary at 07:00 with sales, profit, and low stock."
+    },
+    "reports": {
+      "t": "Clear reports",
+      "d": "Profit, debts, reorder suggestions, and ABC analysis."
+    }
   },
   "featuresPage": {
     "title": "Everything a Cambodian shop needs, in one app",
@@ -166,7 +184,11 @@
     "compareLimit": "What you get",
     "unlimited": "Unlimited",
     "yearly": "or ${{price}} a year",
-    "billingTitle": "Questions about billing"
+    "billingTitle": "Questions about billing",
+    "rowPrice": "Price",
+    "rowBranches": "Branches",
+    "rowMembers": "Members",
+    "rowProducts": "Products"
   },
   "faq": {
     "kicker": "FAQ",
@@ -174,16 +196,46 @@
     "lead": "Can't find your answer? Message us on Telegram.",
     "telegram": "Message on Telegram",
     "all": "See all questions",
-    "afterTrial": { "q": "What happens after the trial?", "a": "You move to the Free plan. Nothing is deleted, and you can subscribe at any time to switch everything back on." },
-    "phones": { "q": "Does it work on phones?", "a": "Yes. It runs in the browser on phones, tablets, and PCs, with nothing to install." },
-    "receipts": { "q": "Can I print Khmer receipts?", "a": "Yes, on 80 mm and 58 mm receipt printers, with totals in dollars and riel." },
-    "staffEmail": { "q": "Do my staff need email?", "a": "No. Invite them with a link on Telegram or a QR code. They set their own password." },
-    "manyBusinesses": { "q": "Can I run more than one business?", "a": "Yes. One account can own several businesses, each with its own plan." },
-    "privacy": { "q": "Can other shops see my data?", "a": "No. Each business's data is private to its own members." },
-    "rate": { "q": "What exchange rate does it use?", "a": "The rate you enter each day. Every sale keeps the rate it used, so old receipts never change." },
-    "offline": { "q": "What if the internet is slow?", "a": "Pages are light and lists load page by page, so it works on a 4G hotspot. The POS needs a connection to save a sale." },
-    "pay": { "q": "How do I pay for a plan?", "a": "In the app, under Settings › Billing. Prices are in USD, monthly or yearly." },
-    "cancel": { "q": "Can I cancel any time?", "a": "Yes. Your plan stays active until the end of the period you paid for, then the business moves to the Free plan." }
+    "afterTrial": {
+      "q": "What happens after the trial?",
+      "a": "You move to the Free plan. Nothing is deleted, and you can subscribe at any time to switch everything back on."
+    },
+    "phones": {
+      "q": "Does it work on phones?",
+      "a": "Yes. It runs in the browser on phones, tablets, and PCs, with nothing to install."
+    },
+    "receipts": {
+      "q": "Can I print Khmer receipts?",
+      "a": "Yes, on 80 mm and 58 mm receipt printers, with totals in dollars and riel."
+    },
+    "staffEmail": {
+      "q": "Do my staff need email?",
+      "a": "No. Invite them with a link on Telegram or a QR code. They set their own password."
+    },
+    "manyBusinesses": {
+      "q": "Can I run more than one business?",
+      "a": "Yes. One account can own several businesses, each with its own plan."
+    },
+    "privacy": {
+      "q": "Can other shops see my data?",
+      "a": "No. Each business's data is private to its own members."
+    },
+    "rate": {
+      "q": "What exchange rate does it use?",
+      "a": "The rate you enter each day. Every sale keeps the rate it used, so old receipts never change."
+    },
+    "offline": {
+      "q": "What if the internet is slow?",
+      "a": "Pages are light and lists load page by page, so it works on a 4G hotspot. The POS needs a connection to save a sale."
+    },
+    "pay": {
+      "q": "How do I pay for a plan?",
+      "a": "In the app, under Settings › Billing. Prices are in USD, monthly or yearly."
+    },
+    "cancel": {
+      "q": "Can I cancel any time?",
+      "a": "Yes. Your plan stays active until the end of the period you paid for, then the business moves to the Free plan."
+    }
   },
   "cta": {
     "title": "Start today. Free for 30 days.",

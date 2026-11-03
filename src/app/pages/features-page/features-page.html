@@ -1,0 +1,24 @@
+<ms-page-hero kicker="features.kicker" title="featuresPage.title" lead="featuresPage.lead" />
+
+<section class="ws-section alt">
+  <div class="site-container">
+    <div class="detail-grid">
+      @for (group of groups; track group.key) {
+        <article class="detail" msReveal>
+          <span class="ws-icon"><span class="icon">{{ group.icon }}</span></span>
+          <h2>{{ 'featuresPage.' + group.key + 'Title' | translate }}</h2>
+          <ul class="check-list">
+            @for (n of range(group.items); track n) {
+              <li><span class="icon">check</span><span>{{ 'featuresPage.' + group.key + n | translate }}</span></li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Grey, white, then the band: it has no top padding and always follows a white section. -->
+<ms-cambodia />
+<ms-how />
+<ms-cta-band />

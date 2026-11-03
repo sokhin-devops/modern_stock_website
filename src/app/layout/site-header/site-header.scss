@@ -1,0 +1,11 @@
+// "contents" keeps the sticky <header> inside the page flow; a block host would be only as tall
+// as the header itself, and position: sticky would stop working.
+:host {
+  display: contents;
+}
+
+@media (max-width: 768px) {
+  .hide-sm {
+    display: none;
+  }
+}

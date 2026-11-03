@@ -1,0 +1,37 @@
+<header class="site-header" [class.scrolled]="scrolled()" [class.open]="menuOpen()">
+  <nav class="site-container site-nav" aria-label="Website">
+    <a class="site-logo" [routerLink]="site.link()" (click)="menuOpen.set(false)">
+      <span class="logo"><span class="icon">inventory_2</span></span><b>ModernStock</b>
+    </a>
+    <div class="links">
+      @for (item of pages; track item.page) {
+        <a [routerLink]="site.link(item.page)" routerLinkActive="active">{{ item.key | translate }}</a>
+      }
+    </div>
+    <span class="spacer"></span>
+    <a class="icon-btn lang-btn" [routerLink]="site.otherLangUrl()"
+       [attr.aria-label]="'nav.switchLanguage' | translate" [title]="'nav.switchLanguage' | translate">
+      <ms-flag [lang]="site.lang()" />
+    </a>
+    <button class="icon-btn dark-toggle" type="button" (click)="theme.toggle()"
+            [attr.aria-label]="(theme.dark() ? 'nav.lightMode' : 'nav.darkMode') | translate">
+      <span class="icon">{{ theme.dark() ? 'light_mode' : 'dark_mode' }}</span>
+    </button>
+    <a class="btn btn-text hide-sm" [href]="site.appUrl('login')">{{ 'nav.login' | translate }}</a>
+    <a class="btn btn-primary" [href]="site.appUrl('sign-up')">{{ 'nav.startFree' | translate }}</a>
+    <button class="icon-btn site-menu-btn" type="button" (click)="menuOpen.set(!menuOpen())"
+            [attr.aria-expanded]="menuOpen()" aria-controls="site-mobile" [attr.aria-label]="'nav.menu' | translate">
+      <span class="icon">{{ menuOpen() ? 'close' : 'menu' }}</span>
+    </button>
+  </nav>
+  <div class="site-mobile" id="site-mobile">
+    @for (item of pages; track item.page) {
+      <a [routerLink]="site.link(item.page)" (click)="menuOpen.set(false)">{{ item.key | translate }}</a>
+    }
+    <a href="#" (click)="$event.preventDefault(); theme.toggle()">
+      <span class="icon">{{ theme.dark() ? 'light_mode' : 'dark_mode' }}</span>
+      {{ (theme.dark() ? 'nav.lightMode' : 'nav.darkMode') | translate }}
+    </a>
+    <a [href]="site.appUrl('login')">{{ 'nav.login' | translate }}</a>
+  </div>
+</header>

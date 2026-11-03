@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+.prose {
+  max-width: 760px;
+  color: var(--text-2);
+  font-size: 16px;
+  line-height: 1.75;
+
+  h2 {
+    margin: 36px 0 10px;
+    color: var(--text);
+    font-size: 22px;
+  }
+}
+
+.draft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--primary-soft);
+  color: var(--text);
+  font-size: 14px;
+
+  .icon {
+    color: var(--primary);
+  }
+}
+
+.updated {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}

@@ -1,0 +1,39 @@
+:host {
+  display: block;
+}
+
+.ws-page-hero {
+  padding: 64px 0 48px;
+  background: radial-gradient(900px 420px at 85% -10%, var(--primary-soft), transparent 70%), var(--surface);
+}
+
+.ws-head {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+:host-context(html[lang='km']) h1 {
+  font-size: 34px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+@media (max-width: 680px) {
+  .ws-page-hero {
+    padding: 40px 0 32px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  :host-context(html[lang='km']) h1 {
+    font-size: 28px;
+  }
+}

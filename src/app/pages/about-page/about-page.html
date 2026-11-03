@@ -1,0 +1,37 @@
+<ms-page-hero kicker="about.kicker" title="about.title" lead="about.lead" />
+
+<section class="ws-section alt">
+  <div class="site-container story" msReveal>
+    <h2>{{ 'about.storyTitle' | translate }}</h2>
+    <p>{{ 'about.story1' | translate }}</p>
+    <p>{{ 'about.story2' | translate }}</p>
+  </div>
+</section>
+
+<section class="ws-section">
+  <div class="site-container">
+    <div class="ws-head" msReveal>
+      <h2>{{ 'about.teamTitle' | translate }}</h2>
+      <p>{{ 'about.teamNote' | translate }}</p>
+    </div>
+    <div class="team" msReveal>
+      @for (person of team; track person.initials) {
+        <div class="person">
+          <span class="avatar">{{ person.initials }}</span>
+          <b>{{ 'about.member' | translate }}</b>
+          <small>{{ person.role | translate }}</small>
+        </div>
+      }
+    </div>
+
+    <div class="university" msReveal>
+      <span class="ws-icon"><span class="icon">school</span></span>
+      <div>
+        <h3>{{ 'about.uniTitle' | translate }}</h3>
+        <p>{{ 'about.uniText' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ms-cta-band />

@@ -1,0 +1,23 @@
+<section class="ws-section alt">
+  <div class="site-container">
+    <div class="ws-head" msReveal>
+      <span class="ws-kicker">{{ 'why.kicker' | translate }}</span>
+      <h2>{{ 'why.title' | translate }}</h2>
+      <p>{{ 'why.lead' | translate }}</p>
+    </div>
+    <div class="ws-problems" msReveal>
+      @for (n of [1, 2, 3, 4]; track n) {
+        <article class="ws-problem">
+          <div class="ws-before">
+            <span class="ws-label">{{ 'why.before' | translate }}</span>
+            <p>{{ 'why.p' + n + 'b' | translate }}</p>
+          </div>
+          <div class="ws-after">
+            <span class="ws-label">{{ 'why.with' | translate }}</span>
+            <p>{{ 'why.p' + n + 'a' | translate }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

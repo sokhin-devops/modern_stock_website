@@ -1,0 +1,11 @@
+<section class="ws-page-hero">
+  <div class="site-container">
+    <div class="ws-head">
+      <span class="ws-kicker">{{ kicker() | translate }}</span>
+      <h1>{{ title() | translate }}</h1>
+      @if (lead()) {
+        <p>{{ lead()! | translate }}</p>
+      }
+    </div>
+  </div>
+</section>

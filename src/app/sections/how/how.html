@@ -1,0 +1,18 @@
+<section class="ws-section" id="how">
+  <div class="site-container">
+    <div class="ws-head" msReveal>
+      <span class="ws-kicker">{{ 'how.kicker' | translate }}</span>
+      <h2>{{ 'how.title' | translate }}</h2>
+      <p>{{ 'how.lead' | translate }}</p>
+    </div>
+    <div class="ws-steps" msReveal>
+      @for (n of [1, 2, 3]; track n) {
+        <div class="ws-step">
+          <span class="ws-step-num">{{ n }}</span>
+          <h3>{{ 'how.s' + n + 't' | translate }}</h3>
+          <p>{{ 'how.s' + n + 'd' | translate }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

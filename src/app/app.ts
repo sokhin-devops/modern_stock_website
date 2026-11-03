@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+/** The root only hosts the router; every page is inside SiteLayout under /km or /en. */
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.scss',
+  imports: [RouterOutlet],
   templateUrl: './app.html',
+  styleUrl: './app.scss',
 })
-export class App {
-  protected readonly title = signal('modern_stock_website');
-}
+export class App {}

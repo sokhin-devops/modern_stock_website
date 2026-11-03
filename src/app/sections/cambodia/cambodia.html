@@ -1,0 +1,36 @@
+<section class="ws-section alt">
+  <div class="site-container ws-split">
+    <div msReveal>
+      <div class="ws-head left">
+        <span class="ws-kicker">{{ 'cambodia.kicker' | translate }}</span>
+        <h2>{{ 'cambodia.title' | translate }}</h2>
+      </div>
+      <div class="ws-points">
+        @for (p of points; track p.n) {
+          <div class="ws-point"><span class="icon">{{ p.icon }}</span><span>{{ 'cambodia.p' + p.n | translate }}</span></div>
+        }
+      </div>
+    </div>
+    <div class="ws-receipt-card" msReveal>
+      <div class="receipt" aria-label="Receipt preview">
+        <div class="r-center"><div class="r-big">ហាងសុខា · Sokha Mini-mart</div><div class="r-small">Toul Kork, Phnom Penh · 012 345 678</div></div>
+        <hr />
+        <div class="r-row r-small"><span>RCT-202611-0312</span><span>03/11/2026 09:42</span></div>
+        <hr />
+        <div class="r-row"><span>ទឹកសុទ្ធ 500ml × 6</span><span>$2.10</span></div>
+        <div class="r-row"><span>មីកញ្ចប់ × 10</span><span>$4.50</span></div>
+        <div class="r-row"><span>ទឹកដោះគោ × 2</span><span>$2.50</span></div>
+        <div class="r-row"><span>ស្ករស 1 kg</span><span>$3.25</span></div>
+        <hr />
+        <div class="r-row r-big"><span>សរុប Total</span><span>$12.35</span></div>
+        <div class="r-row"><span></span><span>៛50,600</span></div>
+        <div class="r-row r-small"><span>$1 = ៛4,100</span><span></span></div>
+        <div class="r-row"><span>បានបង់ Paid</span><span>$10 + ៛10,000</span></div>
+        <div class="r-row"><b>ប្រាក់អាប់ Change</b><b>៛400</b></div>
+        <hr />
+        <div class="r-center r-small">អរគុណ! សូមអញ្ជើញមកម្តងទៀត</div>
+      </div>
+      <span class="caption">{{ 'cambodia.receiptCaption' | translate }}</span>
+    </div>
+  </div>
+</section>

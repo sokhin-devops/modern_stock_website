@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+// On the grey section, plain white cards (like the prototype's problem cards).
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .check-list {
+    gap: 8px;
+    color: var(--text-2);
+  }
+
+  .check-list li {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1000px) {
+  .detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

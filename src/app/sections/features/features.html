@@ -1,0 +1,25 @@
+<section class="ws-section" id="features">
+  <div class="site-container">
+    <div class="ws-head" msReveal>
+      <span class="ws-kicker">{{ 'features.kicker' | translate }}</span>
+      <h2>{{ 'features.title' | translate }}</h2>
+      <p>{{ 'features.lead' | translate }}</p>
+    </div>
+    <div class="ws-features" msReveal>
+      @for (f of items; track f.key) {
+        <article class="ws-feature">
+          <span class="ws-icon"><span class="icon">{{ f.icon }}</span></span>
+          <h3>{{ 'features.' + f.key + '.t' | translate }}</h3>
+          <p>{{ 'features.' + f.key + '.d' | translate }}</p>
+        </article>
+      }
+    </div>
+    @if (showMore()) {
+      <div class="mt-10 flex justify-center">
+        <a class="btn btn-outlined" [routerLink]="site.link('features')">
+          {{ 'features.allFeatures' | translate }}<span class="icon">arrow_forward</span>
+        </a>
+      </div>
+    }
+  </div>
+</section>

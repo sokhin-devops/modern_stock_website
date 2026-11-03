@@ -1,0 +1,80 @@
+<ms-page-hero kicker="contact.kicker" title="contact.title" lead="contact.lead" />
+
+<section class="ws-section alt">
+  <div class="site-container contact-grid">
+    <div class="contact-list">
+      <a class="contact-item" [href]="'tel:' + site.env.phone.replaceAll(' ', '')">
+        <span class="ws-icon"><span class="icon">call</span></span>
+        <span><small>{{ 'contact.phone' | translate }}</small>{{ site.env.phone }}</span>
+      </a>
+      <a class="contact-item" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+        <span class="ws-icon"><span class="icon">send</span></span>
+        <span><small>{{ 'contact.telegram' | translate }}</small>{{ site.env.telegramUrl.replace('https://', '') }}</span>
+      </a>
+      <a class="contact-item" [href]="site.env.facebookUrl" target="_blank" rel="noopener">
+        <span class="ws-icon"><span class="icon">thumb_up</span></span>
+        <span><small>{{ 'contact.facebook' | translate }}</small>ModernStock</span>
+      </a>
+      <a class="contact-item" [href]="mapUrl" target="_blank" rel="noopener">
+        <span class="ws-icon"><span class="icon">location_on</span></span>
+        <span><small>{{ 'contact.address' | translate }}</small>{{ 'contact.addressText' | translate }}</span>
+        <span class="spacer"></span>
+        <span class="open-map">{{ 'contact.openMap' | translate }}<span class="icon">open_in_new</span></span>
+      </a>
+    </div>
+
+    <div class="form-card">
+      @if (state() === 'sent') {
+        <div class="sent" role="status">
+          <span class="stat-icon"><span class="icon">mark_email_read</span></span>
+          <h2>{{ 'contact.sent' | translate }}</h2>
+          <p class="muted">{{ 'contact.sentLead' | translate }}</p>
+          <p-button [label]="'contact.sendAnother' | translate" [outlined]="true" (onClick)="state.set('form')" />
+        </div>
+      } @else {
+        <h2>{{ 'contact.formTitle' | translate }}</h2>
+        <p class="lead">{{ 'contact.formLead' | translate }}</p>
+        <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+          <div class="field">
+            <label class="label" for="c-name">{{ 'contact.name' | translate }}</label>
+            <input pInputText id="c-name" formControlName="name" autocomplete="name" [invalid]="showError('name')" />
+            @if (showError('name')) {
+              <small class="error">{{ 'contact.required' | translate }}</small>
+            }
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label class="label" for="c-phone">{{ 'contact.phoneField' | translate }}</label>
+              <input pInputText id="c-phone" type="tel" formControlName="phone" autocomplete="tel" placeholder="012 345 678"
+                     [invalid]="showError('phone')" />
+              @if (showError('phone')) {
+                <small class="error">
+                  {{ (form.controls.phone.hasError('required') ? 'contact.required' : 'contact.phoneInvalid') | translate }}
+                </small>
+              }
+            </div>
+            <div class="field">
+              <label class="label" for="c-email">{{ 'contact.email' | translate }}</label>
+              <input pInputText id="c-email" type="email" formControlName="email" autocomplete="email" [invalid]="showError('email')" />
+              @if (showError('email')) {
+                <small class="error">{{ 'contact.emailInvalid' | translate }}</small>
+              }
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="c-message">{{ 'contact.message' | translate }}</label>
+            <textarea pTextarea id="c-message" rows="5" formControlName="message" [invalid]="showError('message')"></textarea>
+            @if (showError('message')) {
+              <small class="error">{{ 'contact.required' | translate }}</small>
+            }
+          </div>
+          @if (state() === 'error') {
+            <p class="error send-error" role="alert">{{ 'contact.error' | translate }}</p>
+          }
+          <p-button type="submit" [label]="(state() === 'sending' ? 'contact.sending' : 'contact.send') | translate"
+                    [loading]="state() === 'sending'" styleClass="w-full" />
+        </form>
+      }
+    </div>
+  </div>
+</section>

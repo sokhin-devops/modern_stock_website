@@ -1,0 +1,42 @@
+<section class="ws-section alt" id="pricing">
+  <div class="site-container">
+    @if (showHead()) {
+      <div class="ws-head" msReveal>
+        <span class="ws-kicker">{{ 'pricing.kicker' | translate }}</span>
+        <h2>{{ 'pricing.title' | translate }}</h2>
+        <p>{{ 'pricing.lead' | translate }}</p>
+      </div>
+    }
+    <div class="ws-plans" msReveal>
+      @for (plan of plans.plans(); track plan.code) {
+        <div class="ws-plan" [class.featured]="plan.code === 'PRO'">
+          <div class="ws-plan-name">
+            {{ plan.name }}
+            @if (plan.code === 'PRO') {
+              <span class="tag tag-primary">{{ 'pricing.popular' | translate }}</span>
+            }
+          </div>
+          <p>{{ 'pricing.desc' + plan.code | translate }}</p>
+          <div class="ws-price">${{ plan.priceMonthly }} <small>{{ 'pricing.perMonth' | translate }}</small></div>
+          <ul class="check-list">
+            <li><span class="icon">check</span><span>{{ limitText(plan, 'branches') | translate: { n: plan.limits['branches'] } }}</span></li>
+            <li><span class="icon">check</span><span>{{ 'pricing.members' | translate: { n: plan.limits['members'] } }}</span></li>
+            <li>
+              <span class="icon">check</span>
+              <span>{{ limitText(plan, 'products') | translate: { n: format(plan.limits['products']) } }}</span>
+            </li>
+            @for (key of features; track key) {
+              <li [class.no]="!plan.limits[key]">
+                <span class="icon">{{ plan.limits[key] ? 'check' : 'remove' }}</span>
+                <span>{{ 'pricing.' + key | translate }}</span>
+              </li>
+            }
+          </ul>
+          <a class="btn" [class.btn-primary]="plan.code === 'PRO'" [class.btn-outlined]="plan.code !== 'PRO'"
+             [href]="site.appUrl('sign-up')">{{ 'pricing.cta' + plan.code | translate }}</a>
+        </div>
+      }
+    </div>
+    <p class="ws-note">{{ 'pricing.note' | translate }}</p>
+  </div>
+</section>

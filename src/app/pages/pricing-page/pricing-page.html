@@ -1,0 +1,63 @@
+<ms-page-hero kicker="pricing.kicker" title="pricing.title" lead="pricing.lead" />
+
+<ms-pricing-plans [showHead]="false" />
+
+<section class="ws-section">
+  <div class="site-container">
+    <div class="ws-head" msReveal>
+      <h2>{{ 'pricing.compareTitle' | translate }}</h2>
+    </div>
+    <div class="table-wrap" msReveal>
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>{{ 'pricing.compareLimit' | translate }}</th>
+            @for (plan of plans.plans(); track plan.code) {
+              <th class="c">{{ plan.name }}</th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ 'pricing.rowPrice' | translate }}</td>
+            @for (plan of plans.plans(); track plan.code) {
+              <td class="c">
+                <b>${{ plan.priceMonthly }}</b> {{ 'pricing.perMonth' | translate }}
+                @if (plan.priceYearly) {
+                  <small>{{ 'pricing.yearly' | translate: { price: plan.priceYearly } }}</small>
+                }
+              </td>
+            }
+          </tr>
+          @for (key of limitKeys; track key) {
+            <tr>
+              <td>{{ limitLabels[key] | translate }}</td>
+              @for (plan of plans.plans(); track plan.code) {
+                <td class="c num">
+                  {{ plan.limits[key] === null ? ('pricing.unlimited' | translate) : format(plan.limits[key]) }}
+                </td>
+              }
+            </tr>
+          }
+          @for (key of featureKeys; track key) {
+            <tr>
+              <td>{{ 'pricing.' + key | translate }}</td>
+              @for (plan of plans.plans(); track plan.code) {
+                <td class="c">
+                  @if (plan.limits[key]) {
+                    <span class="icon yes" aria-label="Yes">check</span>
+                  } @else {
+                    <span class="icon no" aria-label="No">remove</span>
+                  }
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<ms-faq-list [keys]="billingFaq" title="pricing.billingTitle" />
+<ms-cta-band />

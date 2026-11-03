@@ -1,0 +1,33 @@
+<section class="ws-section" id="faq">
+  <div class="site-container" [class.ws-faq-grid]="aside()" [class.ws-faq-only]="!aside()">
+    @if (aside()) {
+      <div class="ws-faq-aside" msReveal>
+        <span class="ws-kicker">{{ 'faq.kicker' | translate }}</span>
+        <h2>{{ (title() ?? 'faq.title') | translate }}</h2>
+        <p>{{ 'faq.lead' | translate }}</p>
+        <a class="btn btn-outlined" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+          <span class="icon">send</span><span>{{ 'faq.telegram' | translate }}</span>
+        </a>
+        @if (showAll()) {
+          <a class="btn btn-text" [routerLink]="site.link('faq')">{{ 'faq.all' | translate }}<span class="icon">arrow_forward</span></a>
+        }
+      </div>
+    }
+    <div class="ws-faq" msReveal>
+      @for (key of keys(); track key; let first = $first) {
+        <details [open]="first">
+          <summary>{{ 'faq.' + key + '.q' | translate }}</summary>
+          <p>{{ 'faq.' + key + '.a' | translate }}</p>
+        </details>
+      }
+    </div>
+    @if (!aside()) {
+      <div class="ws-faq-more">
+        <p>{{ 'faq.lead' | translate }}</p>
+        <a class="btn btn-outlined" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+          <span class="icon">send</span><span>{{ 'faq.telegram' | translate }}</span>
+        </a>
+      </div>
+    }
+  </div>
+</section>

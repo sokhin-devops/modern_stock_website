@@ -1,0 +1,65 @@
+:host {
+  display: block;
+}
+
+// On a white section the table keeps a 1 px border, like the feature cards.
+.table-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+
+  th,
+  td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  thead th {
+    background: var(--primary-soft);
+    font-weight: 500;
+  }
+
+  .c {
+    text-align: center;
+  }
+
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
+  b {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .yes {
+    color: var(--primary);
+  }
+
+  .no {
+    color: var(--border-strong);
+  }
+}
+
+@media (max-width: 680px) {
+  .compare th,
+  .compare td {
+    padding: 12px 14px;
+  }
+}
