@@ -1,9 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
-import { Button } from 'primeng/button';
-import { InputText } from 'primeng/inputtext';
-import { Textarea } from 'primeng/textarea';
 
 import { ContactService } from '../../core/contact.service';
 import { SeoService } from '../../core/seo.service';
@@ -16,7 +13,7 @@ const CAMBODIAN_PHONE = /^(0|\+855\s?)\d{2}\s?\d{3}\s?\d{3,4}$/;
 /** Contact (PLAIN.md 12.1 #4): phone, Telegram, Facebook, address, and the contact form (POST /public/contact). */
 @Component({
   selector: 'ms-contact-page',
-  imports: [ReactiveFormsModule, TranslatePipe, Button, InputText, Textarea, PageHero],
+  imports: [ReactiveFormsModule, TranslatePipe, PageHero],
   templateUrl: './contact-page.html',
   styleUrl: './contact-page.scss',
 })

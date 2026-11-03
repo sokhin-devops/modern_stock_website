@@ -1,3 +1,27 @@
 :host {
   display: block;
 }
+
+// The hero fills the screen under the sticky 72 px header, with its content centred vertically.
+// svh = the smallest viewport height, so mobile browser toolbars never hide the bottom of it.
+// It is a minimum: on short screens the hero grows to fit its content instead of cutting it off.
+.ws-hero {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 72px);
+  min-height: calc(100svh - 72px);
+  padding: 48px 0 88px;
+
+  // min-width: 0 lets the container shrink to the screen; otherwise, as a flex item, the app mock-up
+  // (which has no-wrap text) would push the whole page wider than a phone.
+  > .site-container {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .ws-hero {
+    padding: 32px 0 56px;
+  }
+}

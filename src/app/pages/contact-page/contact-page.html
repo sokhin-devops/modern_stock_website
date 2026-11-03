@@ -29,7 +29,7 @@
           <span class="stat-icon"><span class="icon">mark_email_read</span></span>
           <h2>{{ 'contact.sent' | translate }}</h2>
           <p class="muted">{{ 'contact.sentLead' | translate }}</p>
-          <p-button [label]="'contact.sendAnother' | translate" [outlined]="true" (onClick)="state.set('form')" />
+          <button class="btn btn-outlined" type="button" (click)="state.set('form')">{{ 'contact.sendAnother' | translate }}</button>
         </div>
       } @else {
         <h2>{{ 'contact.formTitle' | translate }}</h2>
@@ -37,7 +37,7 @@
         <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
           <div class="field">
             <label class="label" for="c-name">{{ 'contact.name' | translate }}</label>
-            <input pInputText id="c-name" formControlName="name" autocomplete="name" [invalid]="showError('name')" />
+            <input class="input" id="c-name" formControlName="name" autocomplete="name" [class.invalid]="showError('name')" />
             @if (showError('name')) {
               <small class="error">{{ 'contact.required' | translate }}</small>
             }
@@ -45,8 +45,8 @@
           <div class="field-row">
             <div class="field">
               <label class="label" for="c-phone">{{ 'contact.phoneField' | translate }}</label>
-              <input pInputText id="c-phone" type="tel" formControlName="phone" autocomplete="tel" placeholder="012 345 678"
-                     [invalid]="showError('phone')" />
+              <input class="input" id="c-phone" type="tel" formControlName="phone" autocomplete="tel" placeholder="012 345 678"
+                     [class.invalid]="showError('phone')" />
               @if (showError('phone')) {
                 <small class="error">
                   {{ (form.controls.phone.hasError('required') ? 'contact.required' : 'contact.phoneInvalid') | translate }}
@@ -55,7 +55,7 @@
             </div>
             <div class="field">
               <label class="label" for="c-email">{{ 'contact.email' | translate }}</label>
-              <input pInputText id="c-email" type="email" formControlName="email" autocomplete="email" [invalid]="showError('email')" />
+              <input class="input" id="c-email" type="email" formControlName="email" autocomplete="email" [class.invalid]="showError('email')" />
               @if (showError('email')) {
                 <small class="error">{{ 'contact.emailInvalid' | translate }}</small>
               }
@@ -63,7 +63,7 @@
           </div>
           <div class="field">
             <label class="label" for="c-message">{{ 'contact.message' | translate }}</label>
-            <textarea pTextarea id="c-message" rows="5" formControlName="message" [invalid]="showError('message')"></textarea>
+            <textarea class="textarea" id="c-message" rows="5" formControlName="message" [class.invalid]="showError('message')"></textarea>
             @if (showError('message')) {
               <small class="error">{{ 'contact.required' | translate }}</small>
             }
@@ -71,8 +71,10 @@
           @if (state() === 'error') {
             <p class="error send-error" role="alert">{{ 'contact.error' | translate }}</p>
           }
-          <p-button type="submit" [label]="(state() === 'sending' ? 'contact.sending' : 'contact.send') | translate"
-                    [loading]="state() === 'sending'" styleClass="w-full" />
+          <button class="btn btn-primary btn-lg btn-block" type="submit" [disabled]="state() === 'sending'">
+            <span class="icon">{{ state() === 'sending' ? 'progress_activity' : 'send' }}</span>
+            {{ (state() === 'sending' ? 'contact.sending' : 'contact.send') | translate }}
+          </button>
         </form>
       }
     </div>

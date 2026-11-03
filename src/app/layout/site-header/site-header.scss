@@ -9,3 +9,10 @@
     display: none;
   }
 }
+
+// Small phones in Khmer: the logo alone, so the longer "Start free" button and the menu still fit.
+@media (max-width: 400px) {
+  :host-context(html[lang='km']) .site-logo b {
+    display: none;
+  }
+}
