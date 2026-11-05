@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ButtonDirective, ButtonLabel } from 'primeng/button';
 
+import { PlatformService } from '../../core/platform.service';
 import { SiteService } from '../../core/site.service';
 import { Reveal } from '../../shared/reveal';
 
@@ -14,4 +15,5 @@ import { Reveal } from '../../shared/reveal';
 })
 export class CtaBand {
   protected readonly site = inject(SiteService);
+  protected readonly platform = inject(PlatformService);
 }

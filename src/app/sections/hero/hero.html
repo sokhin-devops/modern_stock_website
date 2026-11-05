@@ -8,11 +8,11 @@
       </h1>
       <p class="ws-lead">{{ 'home.lead' | translate }}</p>
       <div class="ws-cta">
-        <a pButton size="large" [href]="site.appUrl('sign-up')"><span pButtonLabel>{{ 'home.ctaTry' | translate }}</span></a>
+        <a pButton size="large" [href]="site.appUrl('sign-up')"><span pButtonLabel>{{ 'home.ctaTry' | translate: platform.trial() }}</span></a>
         <a pButton size="large" [outlined]="true" [routerLink]="site.link('pricing')"><span pButtonLabel>{{ 'home.ctaPricing' | translate }}</span></a>
       </div>
       <ul class="ws-trust">
-        <li><i class="icon pi pi-check-circle"></i><span>{{ 'home.trust1' | translate }}</span></li>
+        <li><i class="icon pi pi-check-circle"></i><span>{{ 'home.trust1' | translate: platform.trial() }}</span></li>
         <li><i class="icon pi pi-check-circle"></i><span>{{ 'home.trust2' | translate }}</span></li>
         <li><i class="icon pi pi-check-circle"></i><span>{{ 'home.trust3' | translate }}</span></li>
       </ul>

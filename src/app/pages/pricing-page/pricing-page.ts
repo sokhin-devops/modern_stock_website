@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
+import { PlatformService } from '../../core/platform.service';
 import { FEATURE_KEYS, LIMIT_KEYS, PlansService } from '../../core/plans.service';
 import { SeoService } from '../../core/seo.service';
 import { CtaBand } from '../../sections/cta-band/cta-band';
@@ -18,6 +19,7 @@ import { Reveal } from '../../shared/reveal';
 })
 export class PricingPage {
   protected readonly plans = inject(PlansService);
+  protected readonly platform = inject(PlatformService);
   protected readonly limitKeys = LIMIT_KEYS;
   protected readonly featureKeys = FEATURE_KEYS;
   protected readonly billingFaq = ['afterTrial', 'pay', 'cancel', 'manyBusinesses'];

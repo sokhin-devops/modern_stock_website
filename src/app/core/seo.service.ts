@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { environment } from '../../environments/environment';
 import { LANGS } from './i18n';
+import { PlatformService } from './platform.service';
 import { SiteService } from './site.service';
 
 /**
@@ -18,11 +19,12 @@ export class SeoService {
   private readonly translate = inject(TranslateService);
   private readonly site = inject(SiteService);
   private readonly document = inject(DOCUMENT);
+  private readonly platform = inject(PlatformService);
 
   /** titleKey and descriptionKey are under "meta" in the translation files; page is the path after /km. */
   set(titleKey: string, descriptionKey: string | null, page = ''): void {
     const keys = ['meta.siteName', `meta.${titleKey}`, ...(descriptionKey ? [`meta.${descriptionKey}`] : [])];
-    this.translate.get(keys).subscribe((t: Record<string, string>) => {
+    this.translate.get(keys, this.platform.trial()).subscribe((t: Record<string, string>) => {
       const name = t['meta.siteName'];
       const pageTitle = t[`meta.${titleKey}`];
       const fullTitle = page ? `${pageTitle} · ${name}` : pageTitle;

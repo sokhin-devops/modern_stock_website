@@ -7,7 +7,7 @@
     <p>{{ 'legal.' + page + 'Intro' | translate }}</p>
     @for (s of sections; track s) {
       <h2>{{ 'legal.' + page + s + 'T' | translate }}</h2>
-      <p>{{ 'legal.' + page + s | translate }}</p>
+      <p>{{ 'legal.' + page + s | translate: platform.trial() }}</p>
     }
   </article>
 </section>

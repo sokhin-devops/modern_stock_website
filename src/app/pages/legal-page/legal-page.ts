@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 
+import { PlatformService } from '../../core/platform.service';
 import { SeoService } from '../../core/seo.service';
 import { PageHero } from '../../sections/page-hero/page-hero';
 
@@ -22,6 +23,7 @@ const SECTIONS: Record<LegalKind, string[]> = {
 export class LegalPage {
   protected readonly page = inject(ActivatedRoute).snapshot.data['page'] as LegalKind;
   protected readonly sections = SECTIONS[this.page];
+  protected readonly platform = inject(PlatformService);
 
   constructor() {
     inject(SeoService).set(this.page + 'Title', null, this.page);
