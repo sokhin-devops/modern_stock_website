@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.example.com/km</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/features</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/features"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/features</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/features"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/pricing"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/pricing"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/faq</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/faq"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/faq"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/about</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/contact</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/terms</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/terms"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/terms"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/km/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/privacy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/privacy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

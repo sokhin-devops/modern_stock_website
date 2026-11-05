@@ -32,6 +32,8 @@ npm start                                   # http://localhost:4200/km
 npm run build      # → dist/modern_stock_website/browser: one index.html per page and language
 ```
 
+The build first writes `public/sitemap.xml` and `public/robots.txt` from `siteUrl` and the pages in `app.routes.ts` ([scripts/seo-files.mjs](scripts/seo-files.mjs)). The link preview image is `public/og-image.png`; its source is [scripts/og-image.html](scripts/og-image.html).
+
 Upload `dist/modern_stock_website/browser` to any static host, for example the Nginx `www` server block in PLAIN.md section 18. Unknown addresses should fall back to `km/index.html`, where the "page not found" screen shows.
 
 Before going live, put the real domains, phone number and social links in [src/environments/environment.prod.ts](src/environments/environment.prod.ts): `siteUrl`, `apiUrl`, `appUrl`, `telegramUrl`, `facebookUrl` and `phone`.

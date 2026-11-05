@@ -39,6 +39,9 @@ export class SeoService {
       this.meta.updateTag({ property: 'og:site_name', content: name });
       this.meta.updateTag({ property: 'og:locale', content: lang === 'km' ? 'km_KH' : 'en_US' });
       this.meta.updateTag({ property: 'og:image', content: `${environment.siteUrl}/og-image.png` });
+      this.meta.updateTag({ property: 'og:image:width', content: '1200' });
+      this.meta.updateTag({ property: 'og:image:height', content: '630' });
+      this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
 
       this.setLink('canonical', url);
       for (const other of LANGS) {
