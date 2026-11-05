@@ -15,7 +15,11 @@
     "contactDescription": "Call us, message us on Telegram or Facebook, or send a message from this page.",
     "termsTitle": "Terms of use",
     "privacyTitle": "Privacy policy",
-    "notFoundTitle": "Page not found"
+    "termsDescription": "The rules for using ModernStock: your account, your business records, plans and payments, and ending the service.",
+    "privacyDescription": "Which personal data ModernStock keeps, why, who sees it, and for how long.",
+    "notFoundTitle": "Page not found",
+    "helpTitle": "Help Center",
+    "helpDescription": "Step-by-step guides to ModernStock: selling at the POS, stock and branches, buying, reports, your team and settings, in Khmer and English."
   },
   "nav": {
     "home": "Home",
@@ -32,7 +36,8 @@
     "switchLanguage": "ភាសាខ្មែរ",
     "skipToContent": "Skip to content",
     "close": "Close",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "help": "Help"
   },
   "home": {
     "eyebrow": "Made for Cambodian shops",
@@ -320,7 +325,7 @@
     "privacyShareT": "Who can see it",
     "privacyShare": "Only the members of your business, with the rights their role gives them. The platform team can see accounts and plans, but not your stock, sales, or customers.",
     "privacyKeepT": "How long we keep it",
-    "privacyKeep": "As long as your account exists. Ask us through the Contact page to delete your account.",
+    "privacyKeep": "As long as your account exists. You can delete it yourself in the app (Delete my account): your name, email, phone and PIN are removed, and the records you entered stay with the business.",
     "privacyRightsT": "Your choices",
     "privacyRights": "You can change your profile and language at any time, and turn Telegram alerts off in the business settings."
   },
@@ -338,5 +343,68 @@
     "title": "This page doesn't exist",
     "lead": "The link may be old, or the address has a typo.",
     "home": "Go to the home page"
+  },
+  "help": {
+    "kicker": "Help Center",
+    "title": "How can we help?",
+    "lead": "Step-by-step guides to every part of ModernStock, for owners, managers, cashiers and stock keepers.",
+    "search": "Search the Help Center",
+    "searchPh": "Search: sale, transfer, PIN, Excel…",
+    "clear": "Clear the search",
+    "popular": "Popular:",
+    "results": "{{n}} results for “{{q}}”",
+    "noResults": "Nothing found for “{{q}}”",
+    "noResultsHint": "Try fewer or other words, browse the topics, or ask us on Telegram.",
+    "browseTopics": "Browse the topics",
+    "startKicker": "New here?",
+    "startTitle": "Start here",
+    "startLead": "Your first hour with ModernStock, in five steps.",
+    "topicsKicker": "Browse",
+    "topicsTitle": "Help by topic",
+    "articles": "{{n}} articles",
+    "rolesKicker": "Your job",
+    "rolesTitle": "Guides by role",
+    "rolesLead": "Pick your role to see the guides you will use most.",
+    "rolesLabel": "Role",
+    "role": {
+      "OWNER": "Owner",
+      "MANAGER": "Manager",
+      "CASHIER": "Cashier",
+      "STOCK_KEEPER": "Stock keeper"
+    },
+    "roleLead": {
+      "OWNER": "You set up the business, the team and the plan, and you see every number.",
+      "MANAGER": "You run the shop day to day: selling, buying, stock, approvals and reports.",
+      "CASHIER": "You serve customers at the POS and look after your cash drawer.",
+      "STOCK_KEEPER": "You receive goods, count them, and move them between branches."
+    },
+    "flowsKicker": "Workflows",
+    "flowsTitle": "How things move through ModernStock",
+    "flowsLead": "Every sale, purchase and transfer goes through the same steps. Open one to see who does each.",
+    "moreKicker": "Still need help?",
+    "moreTitle": "We are here for you",
+    "faqTitle": "Questions before you start",
+    "faqText": "Trial, prices, phones, receipts and your data.",
+    "telegramTitle": "Message us on Telegram",
+    "telegramText": "Send a screenshot of what you see; we answer in Khmer or English.",
+    "contactTitle": "Call or write to us",
+    "contactText": "For billing, your account, or anything else.",
+    "who": "Who does this",
+    "where": "Where in the app",
+    "openApp": "Open in the app",
+    "flow": "How it flows",
+    "flowLabel": "The steps, in order",
+    "orElse": "Or it ends as",
+    "steps": "Step by step",
+    "tips": "Good to know",
+    "warning": "Careful",
+    "related": "Related guides",
+    "previous": "Previous",
+    "next": "Next",
+    "topics": "Topics",
+    "inTopic": "In this topic",
+    "stuck": "Still stuck?",
+    "stuckText": "Message us on Telegram with a screenshot, and tell us which guide you followed.",
+    "allTopics": "All topics"
   }
 }

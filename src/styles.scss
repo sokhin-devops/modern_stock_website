@@ -3,6 +3,7 @@
 // PrimeNG's own styles come from the theme preset (app/core/theme/modern-stock-preset.ts) in the "primeng" layer;
 // the rules below fit PrimeNG components into the prototype's sizes.
 @use "styles/prototype";
+@use "styles/help";
 
 // PrimeIcons in the prototype's icon box: <i class="icon pi pi-box"></i> takes a square of the prototype's size.
 // PrimeIcons glyphs fill more of their box than Material Symbols (which the prototype was drawn with), so the glyph
@@ -64,10 +65,5 @@
 
   .p-floatlabel :is(input, textarea):focus::placeholder {
     opacity: 1;
-  }
-
-  // Choices as one row of buttons (Monthly / Yearly), like the prototype's segmented control.
-  .p-selectbutton .p-togglebutton {
-    font-size: 14px;
   }
 }

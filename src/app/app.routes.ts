@@ -9,6 +9,8 @@ const pages: Routes = [
   { path: 'features', loadComponent: () => import('./pages/features-page/features-page').then((m) => m.FeaturesPage) },
   { path: 'pricing', loadComponent: () => import('./pages/pricing-page/pricing-page').then((m) => m.PricingPage) },
   { path: 'faq', loadComponent: () => import('./pages/faq-page/faq-page').then((m) => m.FaqPage) },
+  { path: 'help', loadComponent: () => import('./pages/help-page/help-page').then((m) => m.HelpPage) },
+  { path: 'help/:slug', loadComponent: () => import('./pages/help-article/help-article').then((m) => m.HelpArticlePage) },
   { path: 'about', loadComponent: () => import('./pages/about-page/about-page').then((m) => m.AboutPage) },
   { path: 'contact', loadComponent: () => import('./pages/contact-page/contact-page').then((m) => m.ContactPage) },
   {

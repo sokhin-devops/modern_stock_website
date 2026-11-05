@@ -1,8 +1,6 @@
 import { Component, afterNextRender, computed, inject, input, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ButtonDirective, ButtonLabel } from 'primeng/button';
-import { SelectButton } from 'primeng/selectbutton';
 
 import { FEATURE_KEYS, Plan, PlansService } from '../../core/plans.service';
 import { SiteService } from '../../core/site.service';
@@ -14,7 +12,7 @@ import { Reveal } from '../../shared/reveal';
  */
 @Component({
   selector: 'ms-pricing-plans',
-  imports: [FormsModule, TranslatePipe, ButtonDirective, ButtonLabel, SelectButton, Reveal],
+  imports: [TranslatePipe, ButtonDirective, ButtonLabel, Reveal],
   templateUrl: './pricing-plans.html',
   styleUrl: './pricing-plans.scss',
 })
@@ -39,14 +37,17 @@ export class PricingPlans {
     ),
   );
 
-  /** Switch labels in the page's language (the prerendered page has the right one for /km and /en). */
+  /**
+   * Switch labels in the page's language (the prerendered page has the right one for /km and /en). Plain buttons with
+   * aria-pressed: PrimeNG's SelectButton puts aria-pressed on an element without a button role (Lighthouse).
+   */
   protected readonly billingOptions = computed(() => {
     this.site.lang();
     const months = this.monthsFree();
     const yearly = this.translate.instant('pricing.yearlyOption');
     return [
-      { value: 'month', label: this.translate.instant('pricing.monthly') },
-      { value: 'year', label: months > 0 ? `${yearly} · ${this.translate.instant('pricing.monthsFree', { n: months })}` : yearly },
+      { value: 'month' as const, label: this.translate.instant('pricing.monthly') },
+      { value: 'year' as const, label: months > 0 ? `${yearly} · ${this.translate.instant('pricing.monthsFree', { n: months })}` : yearly },
     ];
   });
 

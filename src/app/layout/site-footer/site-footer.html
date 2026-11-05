@@ -8,29 +8,30 @@
         <p>{{ 'footer.tagline' | translate }}</p>
       </div>
       <div>
-        <h4>{{ 'footer.product' | translate }}</h4>
+        <h2>{{ 'footer.product' | translate }}</h2>
         <ul>
           <li><a [routerLink]="site.link('features')">{{ 'nav.features' | translate }}</a></li>
           <li><a [routerLink]="site.link('pricing')">{{ 'nav.pricing' | translate }}</a></li>
           <li><a [routerLink]="site.link('faq')">{{ 'nav.faq' | translate }}</a></li>
+          <li><a [routerLink]="site.link('help')">{{ 'help.kicker' | translate }}</a></li>
         </ul>
       </div>
       <div>
-        <h4>{{ 'footer.company' | translate }}</h4>
+        <h2>{{ 'footer.company' | translate }}</h2>
         <ul>
           <li><a [routerLink]="site.link('about')">{{ 'nav.about' | translate }}</a></li>
           <li><a [routerLink]="site.link('contact')">{{ 'nav.contact' | translate }}</a></li>
         </ul>
       </div>
       <div>
-        <h4>{{ 'footer.legal' | translate }}</h4>
+        <h2>{{ 'footer.legal' | translate }}</h2>
         <ul>
           <li><a [routerLink]="site.link('terms')">{{ 'footer.terms' | translate }}</a></li>
           <li><a [routerLink]="site.link('privacy')">{{ 'footer.privacy' | translate }}</a></li>
         </ul>
       </div>
       <div>
-        <h4>{{ 'footer.follow' | translate }}</h4>
+        <h2>{{ 'footer.follow' | translate }}</h2>
         <ul>
           <li><a class="social" [href]="site.env.telegramUrl" target="_blank" rel="noopener"><i class="icon pi pi-telegram"></i>Telegram</a></li>
           <li><a class="social" [href]="site.env.facebookUrl" target="_blank" rel="noopener"><i class="icon pi pi-facebook"></i>Facebook</a></li>

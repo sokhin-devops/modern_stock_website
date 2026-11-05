@@ -2,11 +2,51 @@
   display: block;
 }
 
-// The Monthly / Yearly switch, centered above the cards.
+// The Monthly / Yearly switch, centered above the cards: one row of buttons, the chosen one filled.
 .billing {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
+}
+
+.billing-switch {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+
+  button {
+    min-height: 44px;
+    padding: 0 16px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+
+    & + button {
+      border-left: 1px solid var(--border-strong);
+    }
+
+    &:hover:not(.on) {
+      background: var(--surface-2);
+    }
+
+    &.on {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: -2px;
+    }
+  }
 }
 
 // Under a yearly price: what it costs a month (an empty line on Free keeps the cards aligned).

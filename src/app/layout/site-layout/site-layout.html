@@ -1,5 +1,5 @@
 <ms-site-header />
 <main id="main"><router-outlet /></main>
-<ms-site-footer />
+@defer (hydrate on viewport) { <ms-site-footer /> }
 <!-- Long pages: a round button to go back to the top appears after scrolling down -->
 <p-scrolltop [threshold]="800" icon="pi pi-arrow-up" [buttonAriaLabel]="'nav.backToTop' | translate" styleClass="back-to-top" />
