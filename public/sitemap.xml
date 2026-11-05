@@ -1,130 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.example.com/km</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km"/>
+    <loc>https://www.sokhin.site/km</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km"/>
+    <loc>https://www.sokhin.site/en</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/features</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/features"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/features"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/features"/>
+    <loc>https://www.sokhin.site/km/features</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/features"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/features</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/features"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/features"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/features"/>
+    <loc>https://www.sokhin.site/en/features</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/features"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/pricing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/pricing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/pricing"/>
+    <loc>https://www.sokhin.site/km/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/pricing"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/pricing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/pricing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/pricing"/>
+    <loc>https://www.sokhin.site/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/pricing"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/faq</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/faq"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/faq"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/faq"/>
+    <loc>https://www.sokhin.site/km/faq</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/faq"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/faq</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/faq"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/faq"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/faq"/>
+    <loc>https://www.sokhin.site/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/faq"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/about</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/about"/>
+    <loc>https://www.sokhin.site/km/about</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/about"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/about"/>
+    <loc>https://www.sokhin.site/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/about"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/contact</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/contact"/>
+    <loc>https://www.sokhin.site/km/contact</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/contact"/>
+    <loc>https://www.sokhin.site/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/terms</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/terms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/terms"/>
+    <loc>https://www.sokhin.site/km/terms</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/terms"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/terms</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/terms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/terms"/>
+    <loc>https://www.sokhin.site/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/terms"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/privacy"/>
+    <loc>https://www.sokhin.site/km/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/privacy"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/privacy"/>
+    <loc>https://www.sokhin.site/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/privacy"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
