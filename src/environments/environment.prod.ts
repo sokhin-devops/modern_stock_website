@@ -1,9 +1,9 @@
-// Production: replace example.com with the real domains before deploying (PLAIN.md section 18).
+// Production (main branch → www.sokhin.site). See doc/plain/DevSecOps.md.
 export const environment = {
   production: true,
-  siteUrl: 'https://www.example.com',
-  apiUrl: 'https://api.example.com/api/v1',
-  appUrl: 'https://app.example.com',
+  siteUrl: 'https://www.sokhin.site',
+  apiUrl: 'https://api.sokhin.site/api/v1',
+  appUrl: 'https://app.sokhin.site',
   telegramUrl: 'https://t.me/ModernStockKH',
   facebookUrl: 'https://www.facebook.com/ModernStockKH',
   phone: '012 345 678',
