@@ -5,9 +5,15 @@
         <span class="ws-kicker">{{ 'faq.kicker' | translate }}</span>
         <h2>{{ (title() ?? 'faq.title') | translate }}</h2>
         <p>{{ 'faq.lead' | translate }}</p>
-        <a pButton [outlined]="true" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-          <i class="pi pi-telegram" pButtonIcon></i><span pButtonLabel>{{ 'faq.telegram' | translate }}</span>
-        </a>
+        @if (site.env.telegramUrl; as telegram) {
+          <a pButton [outlined]="true" [href]="telegram" target="_blank" rel="noopener">
+            <i class="pi pi-telegram" pButtonIcon></i><span pButtonLabel>{{ 'faq.telegram' | translate }}</span>
+          </a>
+        } @else {
+          <a pButton [outlined]="true" [routerLink]="site.link('contact')">
+            <i class="pi pi-envelope" pButtonIcon></i><span pButtonLabel>{{ 'contact.kicker' | translate }}</span>
+          </a>
+        }
         @if (showAll()) {
           <a pButton [text]="true" [routerLink]="site.link('faq')">
             <span pButtonLabel>{{ 'faq.all' | translate }}</span><i class="pi pi-arrow-right" pButtonIcon></i>
@@ -31,9 +37,15 @@
     @if (!aside()) {
       <div class="ws-faq-more">
         <p>{{ 'faq.lead' | translate }}</p>
-        <a pButton [outlined]="true" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-          <i class="pi pi-telegram" pButtonIcon></i><span pButtonLabel>{{ 'faq.telegram' | translate }}</span>
-        </a>
+        @if (site.env.telegramUrl; as telegram) {
+          <a pButton [outlined]="true" [href]="telegram" target="_blank" rel="noopener">
+            <i class="pi pi-telegram" pButtonIcon></i><span pButtonLabel>{{ 'faq.telegram' | translate }}</span>
+          </a>
+        } @else {
+          <a pButton [outlined]="true" [routerLink]="site.link('contact')">
+            <i class="pi pi-envelope" pButtonIcon></i><span pButtonLabel>{{ 'contact.kicker' | translate }}</span>
+          </a>
+        }
       </div>
     }
   </div>

@@ -7,20 +7,35 @@
         <span class="ws-icon"><i class="icon pi pi-phone"></i></span>
         <span><small>{{ 'contact.phone' | translate }}</small>{{ site.env.phone }}</span>
       </a>
-      <a class="contact-item" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-        <span class="ws-icon"><i class="icon pi pi-telegram"></i></span>
-        <span><small>{{ 'contact.telegram' | translate }}</small>{{ site.env.telegramUrl.replace('https://', '') }}</span>
+      <a class="contact-item" [href]="'mailto:' + site.env.email">
+        <span class="ws-icon"><i class="icon pi pi-envelope"></i></span>
+        <span><small>{{ 'contact.emailLabel' | translate }}</small>{{ site.env.email }}</span>
       </a>
-      <a class="contact-item" [href]="site.env.facebookUrl" target="_blank" rel="noopener">
-        <span class="ws-icon"><i class="icon pi pi-facebook"></i></span>
-        <span><small>{{ 'contact.facebook' | translate }}</small>ModernStock</span>
-      </a>
-      <a class="contact-item" [href]="mapUrl" target="_blank" rel="noopener">
-        <span class="ws-icon"><i class="icon pi pi-map-marker"></i></span>
-        <span><small>{{ 'contact.address' | translate }}</small>{{ 'contact.addressText' | translate }}</span>
-        <span class="spacer"></span>
-        <span class="open-map">{{ 'contact.openMap' | translate }}<i class="icon pi pi-external-link"></i></span>
-      </a>
+      @if (site.env.telegramUrl; as telegram) {
+        <a class="contact-item" [href]="telegram" target="_blank" rel="noopener">
+          <span class="ws-icon"><i class="icon pi pi-telegram"></i></span>
+          <span><small>{{ 'contact.telegram' | translate }}</small>{{ telegram.replace('https://', '') }}</span>
+        </a>
+      }
+      @if (site.env.facebookUrl; as facebook) {
+        <a class="contact-item" [href]="facebook" target="_blank" rel="noopener">
+          <span class="ws-icon"><i class="icon pi pi-facebook"></i></span>
+          <span><small>{{ 'contact.facebook' | translate }}</small>ModernStock</span>
+        </a>
+      }
+      @if (site.env.mapUrl; as map) {
+        <a class="contact-item" [href]="map" target="_blank" rel="noopener">
+          <span class="ws-icon"><i class="icon pi pi-map-marker"></i></span>
+          <span><small>{{ 'contact.address' | translate }}</small>{{ 'contact.addressText' | translate }}</span>
+          <span class="spacer"></span>
+          <span class="open-map">{{ 'contact.openMap' | translate }}<i class="icon pi pi-external-link"></i></span>
+        </a>
+      } @else {
+        <div class="contact-item">
+          <span class="ws-icon"><i class="icon pi pi-map-marker"></i></span>
+          <span><small>{{ 'contact.address' | translate }}</small>{{ 'contact.addressText' | translate }}</span>
+        </div>
+      }
     </div>
 
     <div class="form-card">

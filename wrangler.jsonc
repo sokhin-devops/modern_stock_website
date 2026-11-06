@@ -1,6 +1,6 @@
 // Cloudflare Workers static assets (doc/plain/DevSecOps.md C6).
 // `wrangler deploy` = prod at www.sokhin.site (main); `wrangler deploy --env dev` = dev-www.sokhin.site (dev).
-// The pipeline copies index.csr.html to 404.html, so unknown pages show the site's not-found page with status 404.
+// The build writes 404.html (scripts/not-found-page.mjs), so unknown pages show the site's not-found page with status 404.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "modern-stock-website",

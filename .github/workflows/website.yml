@@ -61,7 +61,6 @@ jobs:
       - name: Prepare for Cloudflare
         run: |
           out=dist/modern_stock_website/browser
-          cp "$out/index.csr.html" "$out/404.html" # unknown pages: the site's not-found page, with status 404
           if [ "$TARGET" = dev ]; then printf '/*\n  X-Robots-Tag: noindex\n' >> "$out/_headers"; fi
 
       - name: Deploy to Cloudflare

@@ -47,9 +47,15 @@
           <p>{{ 'help.noResultsHint' | translate }}</p>
           <div class="empty-actions">
             <button type="button" class="btn btn-outlined" (click)="query.set('')">{{ 'help.browseTopics' | translate }}</button>
-            <a class="btn btn-primary" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-              <i class="pi pi-telegram" aria-hidden="true"></i>{{ 'help.telegramTitle' | translate }}
-            </a>
+            @if (site.env.telegramUrl; as telegram) {
+              <a class="btn btn-primary" [href]="telegram" target="_blank" rel="noopener">
+                <i class="pi pi-telegram" aria-hidden="true"></i>{{ 'help.telegramTitle' | translate }}
+              </a>
+            } @else {
+              <a class="btn btn-primary" [routerLink]="site.link('contact')">
+                <i class="pi pi-envelope" aria-hidden="true"></i>{{ 'contact.kicker' | translate }}
+              </a>
+            }
           </div>
         </div>
       }
@@ -173,11 +179,13 @@
           <span class="help-card-title">{{ 'help.faqTitle' | translate }}</span>
           <span class="help-card-text">{{ 'help.faqText' | translate }}</span>
         </a>
-        <a class="help-card more-card" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
-          <span class="ws-icon"><i class="icon pi pi-telegram"></i></span>
-          <span class="help-card-title">{{ 'help.telegramTitle' | translate }}</span>
-          <span class="help-card-text">{{ 'help.telegramText' | translate }}</span>
-        </a>
+        @if (site.env.telegramUrl; as telegram) {
+          <a class="help-card more-card" [href]="telegram" target="_blank" rel="noopener">
+            <span class="ws-icon"><i class="icon pi pi-telegram"></i></span>
+            <span class="help-card-title">{{ 'help.telegramTitle' | translate }}</span>
+            <span class="help-card-text">{{ 'help.telegramText' | translate }}</span>
+          </a>
+        }
         <a class="help-card more-card" [routerLink]="site.link('contact')">
           <span class="ws-icon"><i class="icon pi pi-envelope"></i></span>
           <span class="help-card-title">{{ 'help.contactTitle' | translate }}</span>

@@ -6,7 +6,7 @@ import { CtaBand } from '../../sections/cta-band/cta-band';
 import { PageHero } from '../../sections/page-hero/page-hero';
 import { Reveal } from '../../shared/reveal';
 
-/** About us (PLAIN.md 12.1 #3): project story, team, university. Team details are placeholders for the team to fill. */
+/** About us (PLAIN.md 12.1 #3): project story, the team, and the university. Names are shown as written in English. */
 @Component({
   selector: 'ms-about-page',
   imports: [TranslatePipe, Reveal, PageHero, CtaBand],
@@ -15,10 +15,10 @@ import { Reveal } from '../../shared/reveal';
 })
 export class AboutPage {
   protected readonly team = [
-    { initials: 'M1', role: 'about.roleLead' },
-    { initials: 'M2', role: 'about.roleWeb' },
-    { initials: 'M3', role: 'about.roleDesign' },
-    { initials: 'M4', role: 'about.roleQa' },
+    { name: 'Sing Sokhin', initials: 'SS', role: 'about.roleDev' },
+    { name: 'Meas Monyreth', initials: 'MM', role: 'about.roleDev' },
+    { name: 'Vanak Khavy', initials: 'VK', role: 'about.roleDev' },
+    { name: 'Visal', initials: 'V', role: 'about.roleDev' },
   ];
 
   constructor() {

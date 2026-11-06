@@ -266,14 +266,10 @@
     "story1": "Most mini-marts, pharmacies, and hardware shops in Cambodia still keep stock in notebooks or Excel. Owners find out too late that products ran out or expired, and mistakes in riel change add up every day.",
     "story2": "Foreign software rarely fits: it is not in Khmer, it doesn't round riel, and it expects every cashier to have an email. ModernStock starts from how Cambodian shops really work.",
     "teamTitle": "The team",
-    "teamNote": "Names, photos, and roles will be added by the team.",
-    "member": "Team member",
-    "roleLead": "Project lead · API",
-    "roleWeb": "Web app",
-    "roleDesign": "Website · UX/UI",
-    "roleQa": "Testing · Research",
-    "uniTitle": "University",
-    "uniText": "A bachelor's thesis in Computer Science. The university, faculty, and advisor will be added here."
+    "teamNote": "Four Computer Science students at Norton University built ModernStock together.",
+    "uniTitle": "Norton University",
+    "uniText": "A bachelor's thesis for the Bachelor of Computer Science, Computer Study department, Norton University, academic year 2026–2027.",
+    "roleDev": "Developer"
   },
   "contact": {
     "kicker": "Contact",
@@ -299,7 +295,8 @@
     "error": "The message could not be sent. Please try again, or message us on Telegram.",
     "required": "Please fill this in.",
     "phoneInvalid": "Use a Cambodian number, for example 012 345 678.",
-    "emailInvalid": "This email doesn't look right."
+    "emailInvalid": "This email doesn't look right.",
+    "emailLabel": "Email"
   },
   "legal": {
     "draft": "Draft text for the thesis prototype. It must be reviewed before the service is offered to the public.",

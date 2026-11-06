@@ -18,7 +18,7 @@
       @for (person of team; track person.initials) {
         <div class="person">
           <span class="avatar">{{ person.initials }}</span>
-          <b>{{ 'about.member' | translate }}</b>
+          <b>{{ person.name }}</b>
           <small>{{ person.role | translate }}</small>
         </div>
       }
