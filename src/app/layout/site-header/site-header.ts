@@ -30,6 +30,7 @@ export class SiteHeader {
     { page: 'features', key: 'nav.features' },
     { page: 'pricing', key: 'nav.pricing' },
     { page: 'faq', key: 'nav.faq' },
+    { page: 'help', key: 'nav.help' },
     { page: 'about', key: 'nav.about' },
     { page: 'contact', key: 'nav.contact' },
   ];

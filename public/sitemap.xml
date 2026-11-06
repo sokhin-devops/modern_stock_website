@@ -1,130 +1,834 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.example.com/km</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km"/>
+    <loc>https://www.sokhin.site/km</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km"/>
+    <loc>https://www.sokhin.site/en</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/features</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/features"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/features"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/features"/>
+    <loc>https://www.sokhin.site/km/features</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/features"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/features</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/features"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/features"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/features"/>
+    <loc>https://www.sokhin.site/en/features</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/features"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/pricing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/pricing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/pricing"/>
+    <loc>https://www.sokhin.site/km/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/pricing"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/pricing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/pricing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/pricing"/>
+    <loc>https://www.sokhin.site/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/pricing"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/faq</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/faq"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/faq"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/faq"/>
+    <loc>https://www.sokhin.site/km/faq</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/faq"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/faq</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/faq"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/faq"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/faq"/>
+    <loc>https://www.sokhin.site/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/faq"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/about</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/about"/>
+    <loc>https://www.sokhin.site/km/help</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/about"/>
+    <loc>https://www.sokhin.site/en/help</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/contact</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/contact"/>
+    <loc>https://www.sokhin.site/km/help/sell-on-credit</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/sell-on-credit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/sell-on-credit"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/sell-on-credit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/sell-on-credit</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/sell-on-credit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/sell-on-credit"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/sell-on-credit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/customers</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/customers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/customers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/customers"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/customers</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/customers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/customers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/customers"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/orders-and-invoices</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/orders-and-invoices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/orders-and-invoices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/orders-and-invoices"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/orders-and-invoices</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/orders-and-invoices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/orders-and-invoices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/orders-and-invoices"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/receive-payment</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/receive-payment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/receive-payment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/receive-payment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/receive-payment</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/receive-payment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/receive-payment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/receive-payment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/returns-and-credit-notes</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/returns-and-credit-notes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/returns-and-credit-notes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/returns-and-credit-notes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/returns-and-credit-notes</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/returns-and-credit-notes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/returns-and-credit-notes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/returns-and-credit-notes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/debit-notes</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/debit-notes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/debit-notes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/debit-notes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/debit-notes</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/debit-notes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/debit-notes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/debit-notes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/buy-and-receive</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/buy-and-receive"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/buy-and-receive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/buy-and-receive"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/buy-and-receive</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/buy-and-receive"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/buy-and-receive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/buy-and-receive"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/pay-suppliers</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/pay-suppliers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/pay-suppliers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/pay-suppliers"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/pay-suppliers</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/pay-suppliers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/pay-suppliers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/pay-suppliers"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/purchase-returns</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/purchase-returns"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/purchase-returns"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/purchase-returns"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/purchase-returns</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/purchase-returns"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/purchase-returns"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/purchase-returns"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/expenses</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/expenses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/expenses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/expenses"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/expenses</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/expenses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/expenses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/expenses"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/dashboard-and-alerts</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/dashboard-and-alerts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/dashboard-and-alerts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/dashboard-and-alerts"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/dashboard-and-alerts</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/dashboard-and-alerts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/dashboard-and-alerts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/dashboard-and-alerts"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/reports</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/reports"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/reports"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/reports"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/reports</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/reports"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/reports"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/reports"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/telegram</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/telegram"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/telegram"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/telegram"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/telegram</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/telegram"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/telegram"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/telegram"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/export-data</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/export-data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/export-data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/export-data"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/export-data</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/export-data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/export-data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/export-data"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/roles</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/roles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/roles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/roles"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/roles</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/roles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/roles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/roles"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/invite-staff</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/invite-staff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/invite-staff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/invite-staff"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/invite-staff</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/invite-staff"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/invite-staff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/invite-staff"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/activity-log</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/activity-log"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/activity-log"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/activity-log"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/activity-log</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/activity-log"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/activity-log"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/activity-log"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/business-settings</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/business-settings"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/business-settings"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/business-settings"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/business-settings</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/business-settings"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/business-settings"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/business-settings"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/plans-and-billing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/plans-and-billing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/plans-and-billing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/plans-and-billing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/plans-and-billing</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/plans-and-billing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/plans-and-billing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/plans-and-billing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/account-security</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/account-security"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/account-security"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/account-security"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/account-security</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/account-security"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/account-security"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/account-security"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/troubleshooting</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/troubleshooting"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/troubleshooting"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/troubleshooting"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/troubleshooting</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/troubleshooting"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/troubleshooting"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/troubleshooting"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/create-account</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/create-account"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/create-account"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/create-account"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/create-account</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/create-account"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/create-account"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/create-account"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/set-up-business</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/set-up-business"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/set-up-business"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/set-up-business"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/set-up-business</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/set-up-business"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/set-up-business"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/set-up-business"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/first-day</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/first-day"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/first-day"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/first-day"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/first-day</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/first-day"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/first-day"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/first-day"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/find-your-way</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/find-your-way"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/find-your-way"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/find-your-way"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/find-your-way</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/find-your-way"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/find-your-way"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/find-your-way"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/several-businesses</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/several-businesses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/several-businesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/several-businesses"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/several-businesses</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/several-businesses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/several-businesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/several-businesses"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/pos-sale</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/pos-sale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/pos-sale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/pos-sale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/pos-sale</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/pos-sale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/pos-sale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/pos-sale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/dollars-and-riel</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/dollars-and-riel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/dollars-and-riel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/dollars-and-riel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/dollars-and-riel</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/dollars-and-riel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/dollars-and-riel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/dollars-and-riel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/khqr-and-bank</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/khqr-and-bank"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/khqr-and-bank"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/khqr-and-bank"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/khqr-and-bank</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/khqr-and-bank"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/khqr-and-bank"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/khqr-and-bank"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/hold-sale</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/hold-sale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/hold-sale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/hold-sale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/hold-sale</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/hold-sale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/hold-sale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/hold-sale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/cash-shift</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/cash-shift"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/cash-shift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/cash-shift"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/cash-shift</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/cash-shift"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/cash-shift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/cash-shift"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/pin-switch</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/pin-switch"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/pin-switch"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/pin-switch"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/pin-switch</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/pin-switch"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/pin-switch"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/pin-switch"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/void-sale</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/void-sale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/void-sale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/void-sale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/void-sale</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/void-sale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/void-sale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/void-sale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/see-stock</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/see-stock"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/see-stock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/see-stock"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/see-stock</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/see-stock"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/see-stock"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/see-stock"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/adjustments</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/adjustments"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/adjustments"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/adjustments"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/adjustments</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/adjustments"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/adjustments"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/adjustments"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/transfers</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/transfers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/transfers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/transfers"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/transfers</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/transfers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/transfers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/transfers"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/transfer-requests</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/transfer-requests"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/transfer-requests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/transfer-requests"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/transfer-requests</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/transfer-requests"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/transfer-requests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/transfer-requests"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/stock-count</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/stock-count"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/stock-count"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/stock-count"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/stock-count</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/stock-count"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/stock-count"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/stock-count"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/expiry-and-batches</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/expiry-and-batches"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/expiry-and-batches"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/expiry-and-batches"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/expiry-and-batches</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/expiry-and-batches"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/expiry-and-batches"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/expiry-and-batches"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/add-products</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/add-products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/add-products"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/add-products"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/add-products</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/add-products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/add-products"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/add-products"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/import-excel</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/import-excel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/import-excel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/import-excel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/import-excel</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/import-excel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/import-excel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/import-excel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/barcode-labels</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/barcode-labels"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/barcode-labels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/barcode-labels"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/barcode-labels</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/barcode-labels"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/barcode-labels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/barcode-labels"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/help/reorder</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/reorder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/reorder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/reorder"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/help/reorder</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/help/reorder"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/help/reorder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/help/reorder"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/about</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/about"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/contact"/>
+    <loc>https://www.sokhin.site/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/about"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/terms</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/terms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/terms"/>
+    <loc>https://www.sokhin.site/km/contact</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sokhin.site/km/terms</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/terms"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/terms</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/terms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/terms"/>
+    <loc>https://www.sokhin.site/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/terms"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.example.com/km/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/privacy"/>
+    <loc>https://www.sokhin.site/km/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/privacy"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.example.com/en/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="km" href="https://www.example.com/km/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/km/privacy"/>
+    <loc>https://www.sokhin.site/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="km" href="https://www.sokhin.site/km/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sokhin.site/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sokhin.site/km/privacy"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

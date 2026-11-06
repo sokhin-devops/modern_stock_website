@@ -16,6 +16,8 @@
   --primary-container: #d3e3fd;
   --on-primary-container: #041e49;
   --primary-soft: #eaf1fd;
+  /* Blue text on tinted or grey surfaces: --primary there is under WCAG's 4.5:1 (#1a73e8 on #eaf1fd is 3.96:1) */
+  --primary-text: #1967d2;
 
   --canvas: #ffffff;
   --page: #f3f4f6;
@@ -55,6 +57,7 @@
   --primary-container: #0842a0;
   --on-primary-container: #d3e3fd;
   --primary-soft: #1c2b45;
+  --primary-text: #8ab4f8;
 
   --canvas: #111214;
   --page: #18191b;
@@ -238,7 +241,7 @@ button { font: inherit; color: inherit; }
 .ws-section.alt { background: var(--page); }
 .ws-head { display: flex; flex-direction: column; align-items: center; gap: 12px; max-width: 640px; margin: 0 auto 48px; text-align: center; }
 .ws-head.left { align-items: flex-start; margin: 0 0 32px; text-align: left; }
-.ws-kicker { color: var(--primary); font-size: 14px; font-weight: 500; }
+.ws-kicker { color: var(--primary-text); font-size: 14px; font-weight: 500; }
 .ws-head h2 { font-size: 38px; line-height: 1.18; letter-spacing: -.015em; text-wrap: balance; }
 html[lang="km"] .ws-head h2 { font-size: 30px; line-height: 1.5; letter-spacing: 0; }
 .ws-head p { color: var(--muted); font-size: 17px; line-height: 1.6; }
@@ -247,7 +250,7 @@ html[lang="km"] .ws-head h2 { font-size: 30px; line-height: 1.5; letter-spacing:
 .ws-hero { padding: 72px 0 104px; overflow: hidden; background: radial-gradient(1000px 540px at 90% -5%, var(--primary-soft), transparent 70%), var(--surface); }
 .ws-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); gap: 64px; align-items: center; }
 .ws-hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; animation: rise .5s var(--ease-out) both; }
-.ws-eyebrow { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 14px; border-radius: 999px; background: var(--primary-soft); color: var(--primary); font-size: 14px; font-weight: 500; }
+.ws-eyebrow { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 14px; border-radius: 999px; background: var(--primary-soft); color: var(--primary-text); font-size: 14px; font-weight: 500; }
 .ws-eyebrow .icon { font-size: 18px; }
 .ws-hero h1 { font-size: 58px; line-height: 1.06; letter-spacing: -.028em; text-wrap: balance; }
 .ws-hero h1 span { display: block; }
@@ -366,13 +369,16 @@ html[lang="km"] .ws-faq-aside h2 { font-size: 30px; line-height: 1.5; letter-spa
 .ws-faq .p-accordionpanel:not(.p-disabled) .p-accordionheader:focus-visible { background: var(--primary-soft); }
 .ws-faq .p-accordioncontent-content { padding: 0 4px 20px; background: transparent; }
 .ws-faq .p-accordioncontent-content p { max-width: 62ch; color: var(--text-2); line-height: 1.65; }
+/* Closed answers are hidden in the prerendered page too: PrimeNG hides them only once the app runs (an inline style),
+   and until then every answer showed and the questions below jumped up (layout shift). Still in the HTML for search engines. */
+.ws-faq .p-accordioncontent[data-p-active="false"] > .p-accordioncontent-content:not([style]) { height: 0; visibility: hidden; }
 
 /* Closing call to action */
 .ws-cta-band { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding: 52px 56px; border-radius: 28px; background: var(--primary); color: var(--on-primary); }
 .ws-cta-band::after { content: ""; position: absolute; right: -80px; top: -120px; width: 360px; height: 360px; border: 56px solid var(--on-primary); border-radius: 50%; opacity: .07; pointer-events: none; }
 .ws-cta-band h2 { font-size: 32px; line-height: 1.25; }
 html[lang="km"] .ws-cta-band h2 { font-size: 26px; line-height: 1.6; }
-.ws-cta-band p { margin-top: 8px; opacity: .85; font-size: 17px; }
+.ws-cta-band p { margin-top: 8px; font-size: 17px; }
 .ws-cta-band .ws-cta { position: relative; z-index: 1; margin: 0; }
 .ws-cta-band .p-button.cta-light { border-color: var(--on-primary); background: var(--on-primary); color: var(--primary); }
 .ws-cta-band .p-button.cta-light:hover { border-color: var(--on-primary); background: color-mix(in srgb, var(--on-primary) 90%, var(--primary)); color: var(--primary); }
@@ -383,7 +389,7 @@ html[lang="km"] .ws-cta-band h2 { font-size: 26px; line-height: 1.6; }
 .ws-footer { padding: 64px 0 28px; background: var(--page); color: var(--muted); }
 .ws-footer-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(4, minmax(0, 1fr)); gap: 32px; }
 .ws-footer-brand { display: flex; flex-direction: column; gap: 14px; max-width: 280px; }
-.ws-footer h4 { margin-bottom: 14px; color: var(--text); font-size: 14px; }
+.ws-footer h2 { margin-bottom: 14px; color: var(--text); font-size: 14px; }
 .ws-footer ul { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .ws-footer a { color: var(--muted); transition: color .2s var(--ease); }
 .ws-footer a:hover { color: var(--primary); text-decoration: none; }

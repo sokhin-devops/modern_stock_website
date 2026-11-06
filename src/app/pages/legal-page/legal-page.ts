@@ -26,6 +26,6 @@ export class LegalPage {
   protected readonly platform = inject(PlatformService);
 
   constructor() {
-    inject(SeoService).set(this.page + 'Title', null, this.page);
+    inject(SeoService).set(this.page + 'Title', this.page + 'Description', this.page);
   }
 }

@@ -1,6 +1,6 @@
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { provideClientHydration, withEventReplay, withIncrementalHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideTranslateLoader, provideTranslateService } from '@ngx-translate/core';
@@ -14,7 +14,9 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' })),
-    provideClientHydration(withEventReplay()),
+    // Incremental hydration: sections below the fold stay plain prerendered HTML, and their code is not even
+    // downloaded, until they scroll into view (@defer (hydrate on viewport)): less work while a phone loads the page.
+    provideClientHydration(withEventReplay(), withIncrementalHydration()),
     provideHttpClient(withFetch()),
     provideTranslateService({
       loader: provideTranslateLoader(JsonTranslateLoader),

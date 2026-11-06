@@ -10,8 +10,12 @@
 
     <div class="billing">
       <span id="billing-period" class="sr-only">{{ 'pricing.billingPeriod' | translate }}</span>
-      <p-selectbutton [options]="billingOptions()" optionLabel="label" optionValue="value" [allowEmpty]="false"
-                      [ngModel]="billing()" (ngModelChange)="billing.set($event)" ariaLabelledBy="billing-period" />
+      <div class="billing-switch" role="group" aria-labelledby="billing-period">
+        @for (option of billingOptions(); track option.value) {
+          <button type="button" [class.on]="billing() === option.value" [attr.aria-pressed]="billing() === option.value"
+                  (click)="billing.set(option.value)">{{ option.label }}</button>
+        }
+      </div>
     </div>
 
     <div class="ws-plans" msReveal>
