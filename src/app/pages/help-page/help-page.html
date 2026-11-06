@@ -1,0 +1,189 @@
+<section class="help-hero">
+  <div class="site-container">
+    <div class="ws-head">
+      <span class="ws-kicker">{{ 'help.kicker' | translate }}</span>
+      <h1>{{ 'help.title' | translate }}</h1>
+      <p>{{ 'help.lead' | translate }}</p>
+    </div>
+    <form class="help-search" role="search" (submit)="$event.preventDefault()">
+      <i class="pi pi-search" aria-hidden="true"></i>
+      <input type="search" name="q" [value]="query()" (input)="query.set($any($event.target).value)" autocomplete="off"
+             [placeholder]="'help.searchPh' | translate" [attr.aria-label]="'help.search' | translate" />
+      @if (query()) {
+        <button type="button" class="clear" (click)="query.set('')" [attr.aria-label]="'help.clear' | translate">
+          <i class="pi pi-times" aria-hidden="true"></i>
+        </button>
+      }
+    </form>
+    <div class="popular">
+      <span>{{ 'help.popular' | translate }}</span>
+      @for (a of popular; track a.slug) {
+        <a class="chip" [routerLink]="link(a)">{{ a.title[lang()] }}</a>
+      }
+    </div>
+  </div>
+</section>
+
+@if (query().trim()) {
+  <section class="ws-section help-results" aria-live="polite">
+    <div class="site-container narrow">
+      @if (results().length) {
+        <h2 class="results-title">{{ 'help.results' | translate: { n: results().length, q: query().trim() } }}</h2>
+        <ul class="result-list">
+          @for (a of results(); track a.slug) {
+            <li>
+              <a class="help-card result" [routerLink]="link(a)">
+                <span class="help-card-topic">{{ topicTitle(a.topic) }}</span>
+                <span class="help-card-title">{{ a.title[lang()] }}</span>
+                <span class="help-card-text">{{ a.summary[lang()] }}</span>
+              </a>
+            </li>
+          }
+        </ul>
+      } @else {
+        <div class="empty">
+          <span class="ws-icon"><i class="icon pi pi-search"></i></span>
+          <h2>{{ 'help.noResults' | translate: { q: query().trim() } }}</h2>
+          <p>{{ 'help.noResultsHint' | translate }}</p>
+          <div class="empty-actions">
+            <button type="button" class="btn btn-outlined" (click)="query.set('')">{{ 'help.browseTopics' | translate }}</button>
+            <a class="btn btn-primary" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+              <i class="pi pi-telegram" aria-hidden="true"></i>{{ 'help.telegramTitle' | translate }}
+            </a>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+} @else {
+  <!-- Start here: the first hour, in order -->
+  <section class="ws-section help-start">
+    <div class="site-container">
+      <div class="ws-head left">
+        <span class="ws-kicker">{{ 'help.startKicker' | translate }}</span>
+        <h2>{{ 'help.startTitle' | translate }}</h2>
+        <p>{{ 'help.startLead' | translate }}</p>
+      </div>
+      <ol class="start-steps">
+        @for (a of start; track a.slug) {
+          <li>
+            <a class="help-card start-card" [routerLink]="link(a)">
+              <span class="start-num">{{ $index + 1 }}</span>
+              <span class="start-title">{{ a.title[lang()] }}</span>
+              <span class="start-summary">{{ a.summary[lang()] }}</span>
+              <i class="pi pi-arrow-right start-go" aria-hidden="true"></i>
+            </a>
+          </li>
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Topics, each with its articles -->
+  <section class="ws-section alt" id="topics">
+    <div class="site-container">
+      <div class="ws-head">
+        <span class="ws-kicker">{{ 'help.topicsKicker' | translate }}</span>
+        <h2>{{ 'help.topicsTitle' | translate }}</h2>
+      </div>
+      <div class="topic-grid">
+        @for (topic of topics; track topic.slug) {
+          <section class="topic-card" [id]="'topic-' + topic.slug" [attr.aria-labelledby]="'topic-title-' + topic.slug">
+            <div class="topic-head">
+              <span class="ws-icon"><i class="icon pi" [class]="'pi-' + topic.icon"></i></span>
+              <div>
+                <h3 [id]="'topic-title-' + topic.slug">{{ topic.title[lang()] }}</h3>
+                <span class="count">{{ 'help.articles' | translate: { n: articlesOf(topic.slug).length } }}</span>
+              </div>
+            </div>
+            <p>{{ topic.summary[lang()] }}</p>
+            <ul>
+              @for (a of articlesOf(topic.slug); track a.slug) {
+                <li><a [routerLink]="link(a)">{{ a.title[lang()] }}</a></li>
+              }
+            </ul>
+          </section>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides by role -->
+  <section class="ws-section help-roles">
+    <div class="site-container">
+      <div class="ws-head">
+        <span class="ws-kicker">{{ 'help.rolesKicker' | translate }}</span>
+        <h2>{{ 'help.rolesTitle' | translate }}</h2>
+        <p>{{ 'help.rolesLead' | translate }}</p>
+      </div>
+      <div class="role-switch" role="group" [attr.aria-label]="'help.rolesLabel' | translate">
+        @for (r of roles; track r) {
+          <button type="button" [class.on]="role() === r" [attr.aria-pressed]="role() === r" (click)="role.set(r)">
+            {{ 'help.role.' + r | translate }}
+          </button>
+        }
+      </div>
+      <p class="role-lead">{{ 'help.roleLead.' + role() | translate }}</p>
+      <ul class="role-grid">
+        @for (a of forRole(); track a.slug) {
+          <li>
+            <a class="help-card role-card" [routerLink]="link(a)">
+              <span class="help-card-topic">{{ topicTitle(a.topic) }}</span>
+              <span class="help-card-title">{{ a.title[lang()] }}</span>
+              <span class="help-card-text">{{ a.summary[lang()] }}</span>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Workflows: how documents move -->
+  <section class="ws-section alt" id="workflows">
+    <div class="site-container">
+      <div class="ws-head">
+        <span class="ws-kicker">{{ 'help.flowsKicker' | translate }}</span>
+        <h2>{{ 'help.flowsTitle' | translate }}</h2>
+        <p>{{ 'help.flowsLead' | translate }}</p>
+      </div>
+      <div class="flow-grid">
+        @for (a of workflows; track a.slug) {
+          <a class="help-card flow-card" [routerLink]="link(a)">
+            <span class="flow-card-head">
+              <span class="flow-title">{{ a.title[lang()] }}</span>
+              <i class="pi pi-arrow-right" aria-hidden="true"></i>
+            </span>
+            <ms-help-flow [stages]="a.flow!" [compact]="true" />
+          </a>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Still need help -->
+  <section class="ws-section">
+    <div class="site-container">
+      <div class="ws-head">
+        <span class="ws-kicker">{{ 'help.moreKicker' | translate }}</span>
+        <h2>{{ 'help.moreTitle' | translate }}</h2>
+      </div>
+      <div class="more-grid">
+        <a class="help-card more-card" [routerLink]="site.link('faq')">
+          <span class="ws-icon"><i class="icon pi pi-question-circle"></i></span>
+          <span class="help-card-title">{{ 'help.faqTitle' | translate }}</span>
+          <span class="help-card-text">{{ 'help.faqText' | translate }}</span>
+        </a>
+        <a class="help-card more-card" [href]="site.env.telegramUrl" target="_blank" rel="noopener">
+          <span class="ws-icon"><i class="icon pi pi-telegram"></i></span>
+          <span class="help-card-title">{{ 'help.telegramTitle' | translate }}</span>
+          <span class="help-card-text">{{ 'help.telegramText' | translate }}</span>
+        </a>
+        <a class="help-card more-card" [routerLink]="site.link('contact')">
+          <span class="ws-icon"><i class="icon pi pi-envelope"></i></span>
+          <span class="help-card-title">{{ 'help.contactTitle' | translate }}</span>
+          <span class="help-card-text">{{ 'help.contactText' | translate }}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+}
