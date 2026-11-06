@@ -30,7 +30,6 @@ export class ContactPage {
   private readonly contact = inject(ContactService);
 
   protected readonly state = signal<'form' | 'sending' | 'sent' | 'error'>('form');
-  protected readonly mapUrl = 'https://www.google.com/maps/search/?api=1&query=Phnom+Penh';
   protected readonly form = inject(NonNullableFormBuilder).group({
     name: ['', [Validators.required, Validators.maxLength(120)]],
     phone: ['', [Validators.required, Validators.pattern(CAMBODIAN_PHONE)]],

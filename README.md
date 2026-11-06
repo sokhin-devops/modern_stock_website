@@ -34,7 +34,7 @@ npm run build      # → dist/modern_stock_website/browser: one index.html per p
 
 The build first writes `public/sitemap.xml` and `public/robots.txt` from `siteUrl` and the pages in `app.routes.ts` ([scripts/seo-files.mjs](scripts/seo-files.mjs)). The link preview image is `public/og-image.png`; its source is [scripts/og-image.html](scripts/og-image.html).
 
-Upload `dist/modern_stock_website/browser` to any static host, for example the Nginx `www` server block in PLAIN.md section 18. Unknown addresses should fall back to `km/index.html`, where the "page not found" screen shows.
+Upload `dist/modern_stock_website/browser` to any static host, for example the Nginx `www` server block in PLAIN.md section 18. Unknown addresses must get `404.html` with status 404 (the build writes it; Nginx: `error_page 404 /404.html;`), where the "page not found" screen shows in the address's language. Never fall back to the root `index.html`: it only redirects to `/km`, so every typo would land on the Khmer home page.
 
 Before going live, put the real domains, phone number and social links in [src/environments/environment.prod.ts](src/environments/environment.prod.ts): `siteUrl`, `apiUrl`, `appUrl`, `telegramUrl`, `facebookUrl` and `phone`.
 

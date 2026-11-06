@@ -6,6 +6,7 @@
     "start": "ng serve",
     "prebuild": "node scripts/seo-files.mjs",
     "build": "ng build",
+    "postbuild": "node scripts/not-found-page.mjs",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,

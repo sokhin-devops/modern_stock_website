@@ -30,13 +30,19 @@
           <li><a [routerLink]="site.link('privacy')">{{ 'footer.privacy' | translate }}</a></li>
         </ul>
       </div>
-      <div>
-        <h2>{{ 'footer.follow' | translate }}</h2>
-        <ul>
-          <li><a class="social" [href]="site.env.telegramUrl" target="_blank" rel="noopener"><i class="icon pi pi-telegram"></i>Telegram</a></li>
-          <li><a class="social" [href]="site.env.facebookUrl" target="_blank" rel="noopener"><i class="icon pi pi-facebook"></i>Facebook</a></li>
-        </ul>
-      </div>
+      @if (site.env.telegramUrl || site.env.facebookUrl) {
+        <div>
+          <h2>{{ 'footer.follow' | translate }}</h2>
+          <ul>
+            @if (site.env.telegramUrl; as telegram) {
+              <li><a class="social" [href]="telegram" target="_blank" rel="noopener"><i class="icon pi pi-telegram"></i>Telegram</a></li>
+            }
+            @if (site.env.facebookUrl; as facebook) {
+              <li><a class="social" [href]="facebook" target="_blank" rel="noopener"><i class="icon pi pi-facebook"></i>Facebook</a></li>
+            }
+          </ul>
+        </div>
+      }
     </div>
     <div class="ws-footer-bottom">
       <span>© {{ year }} ModernStock</span>
